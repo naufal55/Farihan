@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Finish</name>
+    <events>
+        <event-block sid="336654308469506">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="657547689988774" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="154872520630340" type="Audio">
+                    <param id="0" name="Audio file">nilai</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;nilai&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="824218663219298" type="TxtKoin">
+                    <param id="0" name="Text">koin</param>
+                </action>
+                <action id="0" name="Set text" sid="911314863056876" type="ExpPoin">
+                    <param id="0" name="Text">star</param>
+                </action>
+                <action id="0" name="Set item" sid="307996790861161" type="LocalStorage">
+                    <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                    <param id="1" name="Value">koin</param>
+                </action>
+                <action id="0" name="Set item" sid="548923034554382" type="LocalStorage">
+                    <param id="0" name="Key">&quot;StarStor&quot;</param>
+                    <param id="1" name="Value">star</param>
+                </action>
+                <action id="5" name="Set web font" sid="317434345755689" type="LabelLayout2">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="505534417031855" type="LabelLayout3">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="722166067211500" type="ExpPoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="577753518340661" type="TxtKoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action disabled="1" id="5" name="Set web font" sid="935748557345210" type="TempKoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action disabled="1" id="5" name="Set web font" sid="914869294626515" type="TempStar">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action disabled="1" id="5" name="Set web font" sid="213645504790229" type="LevelDicapai">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="896549981361246" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="731677817971925" type="TempStar">
+                    <param id="0" name="Text">TotStar</param>
+                </action>
+                <action id="0" name="Set text" sid="666902814584354" type="TempKoin">
+                    <param id="0" name="Text">TotKoin</param>
+                </action>
+                <action id="0" name="Set text" sid="573413451358178" type="LevelDicapai">
+                    <param id="0" name="Text">&quot;Level yang dicapai : &quot;&amp;level</param>
+                </action>
+                <action id="0" name="Set text" sid="889865165645349" type="LabelLayout3">
+                    <param id="0" name="Text">&quot;Kamu berhasil mendapatkan :&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558573780372712">
+            <conditions>
+                <condition id="10" name="On item missing" sid="180273541353477" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="379486629339650" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                    <param id="1" name="Value">level</param>
+                </action>
+                <action id="0" name="Set item" sid="700363301448856" type="LocalStorage">
+                    <param id="0" name="Key">&quot;kointinggi&quot;</param>
+                    <param id="1" name="Value">TotKoin</param>
+                </action>
+                <action id="0" name="Set item" sid="967573883970897" type="LocalStorage">
+                    <param id="0" name="Key">&quot;startinggi&quot;</param>
+                    <param id="1" name="Value">TotStar</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="555311635313338">
+            <conditions>
+                <condition id="9" name="On item exists" sid="113365857233461" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="515869938847687">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="541111741387989" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">LocalStorage.ItemValue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="362411277530091" type="LocalStorage">
+                            <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                            <param id="1" name="Value">level</param>
+                        </action>
+                        <action id="0" name="Set item" sid="948805771468559" type="LocalStorage">
+                            <param id="0" name="Key">&quot;kointinggi&quot;</param>
+                            <param id="1" name="Value">TotKoin</param>
+                        </action>
+                        <action id="0" name="Set item" sid="462983720873162" type="LocalStorage">
+                            <param id="0" name="Key">&quot;startinggi&quot;</param>
+                            <param id="1" name="Value">TotStar</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="380347448457848">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="516753346852154" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="832751319293817" type="anyclick" />
+                <action id="-3" name="Set position" sid="417357430784001" type="anyclick">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="0" name="Set spraying" sid="721759256175370" type="anyclick">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="670101958703526">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="855824404414407" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set spraying" sid="299990679240431" type="anyclick">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="392798412868896" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="848275728591622" title="Gestures Load4">
+            <sub-events>
+                <event-block sid="611423845558166">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="731279378500295" type="LoadBawah" />
+                        <condition id="-4" name="Is outside layout" sid="635602851763702" type="LoadAtas" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="974098957369786" type="Loading" />
+                        <action id="-15" name="Set visible" sid="903361134740135" type="BGFinish">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="795252697793110" type="Quit">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="657101825699972" type="LoadBawah" />
+                        <action id="-9" name="Destroy" sid="375088089764922" type="LoadAtas" />
+                        <action id="0" name="Spawn another object" sid="678474503362749" type="TempatLayar">
+                            <param id="0" name="Object">LoadBawah</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="311367055476578" type="TempatLayar">
+                            <param id="0" name="Object">LoadAtas</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="245208775709624" type="LoadBawah">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="949323893954692" type="LoadAtas">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="668266952107280" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beli&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="820916564785886" type="System">
+                            <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="265530753578253">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="709558125385030" type="LoadAtas">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="372436640996608" type="LoadBawah">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="587815879421787" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="260619769814589" type="LoadAtas">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="149888032358037" type="LoadBawah">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="940974007807425" type="Loading">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="397505633860165" type="Loading" />
+                        <action id="4" name="Set animation" sid="234373229405488" type="Loading">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="743518799219190">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="950207528988194" type="Loading">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="178016793821876" type="Loading" />
+                                <action id="-2" name="Go to layout" sid="338598095270374" type="System">
+                                    <param id="0" name="Layout">Layout Menu</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="136630326620180" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="724800856431107" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="880055075436428" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="977838651121154" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="921590715102632" type="LoadAtas">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="652327823411611" type="LoadBawah">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="448330966557408" type="LoadAtas">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="464385244411816" type="LoadBawah">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="636814430817937" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="431693373081875" title="GUI Beranda4">
+            <sub-events>
+                <event-block sid="889894031161500">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="102912387503061" type="YellowStar" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="459217383067930" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="198377891448147" type="YellowStar">
+                            <param id="0" name="Speed">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="765967338854289">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="443565883701333" type="Touch">
+                            <param id="0" name="Object">Lanjut</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="742687864413998" type="Lanjut">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="661687362347221" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="439558039804772" type="Lanjut">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="313625763615759" type="LoadBawah">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="567418269561276" type="LoadAtas">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="447036506462560" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="498318051872345" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="774359679891162" type="System">
+                            <param id="0" name="Variable">TotKoin</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="946182829045112" type="System">
+                            <param id="0" name="Variable">TotStar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="263565506468547" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="778121788914207" type="System">
+                            <param id="0" name="Variable">Nyawa</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

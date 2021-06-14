@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Layout Mulai</layout>
+        <layout order="1">Layout Game</layout>
+        <layout order="2">Layout Game 2</layout>
+        <layout order="3">Layout Game 3</layout>
+        <layout order="4">Layout Game 4</layout>
+        <layout order="5">Layout Game 5</layout>
+        <layout order="6">Layout Game 6</layout>
+        <layout order="7">Layout Game 7</layout>
+        <layout order="8">Layout Game 8</layout>
+        <layout order="9">Layout Game 9</layout>
+        <layout order="10">Layout Game 10</layout>
+        <layout order="11">Layout Game 11</layout>
+        <layout order="12">Layout Game 12</layout>
+        <layout order="13">Layout Game 13</layout>
+        <layout order="14">Layout Game 14</layout>
+        <layout order="15">Layout Game 15</layout>
+        <layout order="16">Layout Game 16</layout>
+        <layout order="17">Layout Game 17</layout>
+        <layout order="18">Layout Game 18</layout>
+        <layout order="19">Layout Game 19</layout>
+        <layout order="20">Layout Game 20</layout>
+        <layout order="21">Layout Karakter</layout>
+        <layout order="22">Layout Menu</layout>
+        <event-sheet order="23">Event sheet Menu</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Assets/" />
+        <folder expanded="1" path="object-folder/Objects/" />
+        <folder expanded="1" path="object-folder/Texts/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/fonts/" />
+        <folder expanded="1" path="animation-folder/BGName/" />
+        <folder expanded="1" path="animation-folder/BukuTombol/" />
+        <folder expanded="1" path="animation-folder/SkorTombol/" />
+        <folder expanded="1" path="animation-folder/koin/" />
+        <folder expanded="1" path="animation-folder/MulaiTombol/" />
+        <folder expanded="1" path="animation-folder/RatingTombol/" />
+        <folder expanded="1" path="animation-folder/TentangTombol/" />
+        <folder expanded="1" path="animation-folder/star/" />
+        <folder expanded="1" path="animation-folder/LoadAtas/" />
+        <folder expanded="1" path="animation-folder/LoadBawah/" />
+        <folder expanded="1" path="animation-folder/TempatLayar/" />
+        <folder expanded="1" path="animation-folder/Quit/" />
+        <folder expanded="1" path="animation-folder/Board/" />
+        <folder expanded="1" path="animation-folder/BackButton/" />
+        <folder expanded="1" path="animation-folder/Pilih1/" />
+        <folder expanded="1" path="animation-folder/Lanjut/" />
+        <folder expanded="1" path="animation-folder/Pilih2/" />
+        <folder expanded="1" path="animation-folder/Beli/" />
+        <folder expanded="1" path="animation-folder/BoardNotif/" />
+        <folder expanded="1" path="animation-folder/Pilgan/" />
+        <folder expanded="1" path="animation-folder/KeluarGame/" />
+        <folder expanded="1" path="animation-folder/TempatKalimat/" />
+        <folder expanded="1" path="animation-folder/BoardArab/" />
+        <folder expanded="1" path="animation-folder/BoardLatin/" />
+        <folder expanded="1" path="animation-folder/BoardStar/" />
+        <folder expanded="1" path="animation-folder/YellowStar/" />
+        <folder expanded="1" path="animation-folder/BoardName/" />
+        <folder expanded="1" path="animation-folder/Next/" />
+        <folder expanded="1" path="animation-folder/Prev/" />
+        <folder expanded="1" path="animation-folder/Loading/" />
+        <folder expanded="1" path="animation-folder/Drop/" />
+        <folder expanded="1" path="animation-folder/garis/" />
+        <folder expanded="1" path="animation-folder/Kalimat/" />
+        <folder expanded="1" path="animation-folder/Nyawa/" />
+        <folder expanded="1" path="animation-folder/TempatNyawa/" />
+        <folder expanded="1" path="animation-folder/Check/" />
+        <folder expanded="1" path="animation-folder/ok/" />
+        <folder expanded="1" path="animation-folder/ExtraKalimat/" />
+        <folder expanded="1" path="animation-folder/BGUtama/" />
+        <folder expanded="1" path="animation-folder/Logo/" />
+        <folder expanded="1" path="animation-folder/LogoTulisan/" />
+        <folder expanded="1" path="animation-folder/SoundTombol/" />
+        <folder expanded="1" path="animation-folder/Karakter/" />
+        <folder expanded="1" path="animation-folder/KarakterPlayer/" />
+        <folder expanded="1" path="animation-folder/LatarBelakang/" />
+        <folder expanded="1" path="animation-folder/LogoKepala/" />
+        <folder expanded="1" path="animation-folder/AssetRoom/" />
+        <folder expanded="1" path="animation-folder/PetunjukTombol/" />
+        <folder expanded="1" path="animation-folder/Petunjuk/" />
+    </folders-expanded>
+</c2uistate>

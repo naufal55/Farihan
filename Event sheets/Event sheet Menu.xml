@@ -1,0 +1,1782 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Menu</name>
+    <events>
+        <variable constant="0" name="Petunjuk" sid="550369035923217" static="0" type="number">0</variable>
+        <variable constant="0" name="KoinTinggi" sid="173498047782280" static="0" type="number">0</variable>
+        <variable constant="0" name="Startinggi" sid="471526420027229" static="0" type="number">0</variable>
+        <variable constant="0" name="skor" sid="590425812535829" static="0" type="number">0</variable>
+        <variable constant="0" name="music" sid="908984933125915" static="0" type="number">0</variable>
+        <variable constant="0" name="TotStar" sid="847973505035046" static="0" type="number">0</variable>
+        <variable constant="0" name="TotKoin" sid="866217716043970" static="0" type="number">0</variable>
+        <variable constant="0" name="star" sid="162213547587541" static="0" type="number">0</variable>
+        <variable constant="0" name="koin" sid="750131588831389" static="0" type="number">0</variable>
+        <variable constant="0" name="Hal" sid="510495018052515" static="0" type="number">0</variable>
+        <variable constant="0" name="LayoutLoader" sid="565469151730646" static="0" type="number">0</variable>
+        <event-block sid="217585921227217">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="766935886625606" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="127003982741889" type="Loading" />
+                <action id="0" name="Set text" sid="350595058139847" type="user">
+                    <param id="0" name="Text">LocalStorage.ItemValue</param>
+                </action>
+                <action id="5" name="Check item exists" sid="225337393035548" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NamaStor&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="892293446917209" type="LocalStorage">
+                    <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="744737066190316" type="LocalStorage">
+                    <param id="0" name="Key">&quot;StarStor&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="945088944299678" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="951180328678386" type="LocalStorage">
+                    <param id="0" name="Key">&quot;kointinggi&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="500719334069709" type="LocalStorage">
+                    <param id="0" name="Key">&quot;startinggi&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="924241986095258" type="LabelLayout3">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="195350139473849" type="Notif1">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="814705424414389" type="PopUpText">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="164118190099112" type="user">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="191893889462288" type="ExpPoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="407680131068091" type="TxtKoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="18" name="Set timeout" sid="205814144655793" type="StarEffect">
+                    <param id="0" name="Timeout">2</param>
+                </action>
+                <action id="3" name="Set volume" sid="826117514725952" type="Audio">
+                    <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                    <param id="1" name="dB">0</param>
+                </action>
+                <action id="0" name="Set spraying" sid="869922297352693" type="StarYellowEffect">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220069135084419">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="581997966706682" type="System">
+                    <param id="0" name="Variable">music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="390530027279283" type="Audio">
+                    <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="617596544414665" type="SoundTombol">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="436824608781280">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="695087650989934" type="System">
+                    <param id="0" name="Variable">music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="910024213743704" type="Audio">
+                    <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="183405174185963" type="SoundTombol">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="435961153978787">
+            <conditions>
+                <condition id="10" name="On item missing" sid="346823410174529" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NamaStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="768746242635390" type="System">
+                    <param id="0" name="Layer">&quot;InputNama&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="796302493815685" type="Notif1">
+                    <param id="0" name="Text">&quot;Silahkan masukkan nama kamu&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="423261675944214" type="user">
+                    <param id="0" name="Text">LocalStorage.ItemValue</param>
+                </action>
+                <action id="-12" name="Set group active" sid="176490176029689" type="System">
+                    <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="757095065124728">
+            <conditions>
+                <condition id="10" name="On item missing" sid="462430144922396" type="LocalStorage">
+                    <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="854813987306520" type="LocalStorage">
+                    <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                    <param id="1" name="Value">1000</param>
+                </action>
+                <action id="-9" name="Set value" sid="965494688639144" type="System">
+                    <param id="0" name="Variable">koin</param>
+                    <param id="1" name="Value">1000</param>
+                </action>
+                <action id="0" name="Set text" sid="759139812167817" type="TxtKoin">
+                    <param id="0" name="Text">koin</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115068628179751">
+            <conditions>
+                <condition id="10" name="On item missing" sid="245848328122533" type="LocalStorage">
+                    <param id="0" name="Key">&quot;StarStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="269309293125124" type="LocalStorage">
+                    <param id="0" name="Key">&quot;StarStor&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="112559535375837" type="System">
+                    <param id="0" name="Variable">star</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="678554001186104" type="ExpPoin">
+                    <param id="0" name="Text">star</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="740875180333444">
+            <conditions>
+                <condition id="9" name="On item exists" sid="827331852840594" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NamaStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="799953638058671" type="user">
+                    <param id="0" name="Text">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="497024719595313">
+            <conditions>
+                <condition id="9" name="On item exists" sid="692258454964066" type="LocalStorage">
+                    <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="811696029598469" type="System">
+                    <param id="0" name="Variable">koin</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="0" name="Set text" sid="821874875556545" type="TxtKoin">
+                    <param id="0" name="Text">koin</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558740582424284">
+            <conditions>
+                <condition id="9" name="On item exists" sid="168580376911135" type="LocalStorage">
+                    <param id="0" name="Key">&quot;StarStor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="742220098428436" type="System">
+                    <param id="0" name="Variable">star</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="0" name="Set text" sid="601619051186496" type="ExpPoin">
+                    <param id="0" name="Text">star</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="379830981658098">
+            <conditions>
+                <condition id="9" name="On item exists" sid="270691509292505" type="LocalStorage">
+                    <param id="0" name="Key">&quot;leveltinggi&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="447186210725677" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="555054395979204">
+            <conditions>
+                <condition id="9" name="On item exists" sid="112105351204427" type="LocalStorage">
+                    <param id="0" name="Key">&quot;kointinggi&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="162145891649081" type="System">
+                    <param id="0" name="Variable">KoinTinggi</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="806028541778126">
+            <conditions>
+                <condition id="9" name="On item exists" sid="885556057777235" type="LocalStorage">
+                    <param id="0" name="Key">&quot;startinggi&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="808577500582608" type="System">
+                    <param id="0" name="Variable">Startinggi</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674349791455446">
+            <conditions>
+                <condition id="3" name="On touched object" sid="243714656073131" type="Touch">
+                    <param id="0" name="Object">ok</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="333144578318951" type="ok" />
+                <condition id="0" inverted="1" name="Compare text" sid="220033335216546" type="InputNama">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="223069638221080" type="ok">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+                <action id="-16" name="Wait" sid="740905399451471" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="352103027124302" type="ok">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="906923496314398" type="System">
+                    <param id="0" name="Layer">&quot;InputNama&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="172865285716595" type="user">
+                    <param id="0" name="Text">InputNama.Text</param>
+                </action>
+                <action id="0" name="Set item" sid="150949571402249" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NamaStor&quot;</param>
+                    <param id="1" name="Value">InputNama.Text</param>
+                </action>
+                <action id="-12" name="Set group active" sid="816686116447865" type="System">
+                    <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="438054202413356">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="204319089137614" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="505762270196193" type="anyclick" />
+                <action id="-3" name="Set position" sid="701016710578557" type="anyclick">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="0" name="Set spraying" sid="770245917719664" type="anyclick">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="794910186455061">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="752102162070417" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set spraying" sid="735061882851150" type="anyclick">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="633554724193517" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="208216011034110" title="Gestures Load">
+            <sub-events>
+                <event-block sid="906961250931452">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="499968607418772" type="LoadBawah" />
+                        <condition id="-4" name="Is outside layout" sid="567235600795746" type="LoadAtas" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="765366215065136" type="LoadBawah" />
+                        <action id="-9" name="Destroy" sid="620273712115123" type="LoadAtas" />
+                        <action id="0" name="Spawn another object" sid="587083095348040" type="TempatLayar">
+                            <param id="0" name="Object">LoadBawah</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="529764514485879" type="TempatLayar">
+                            <param id="0" name="Object">LoadAtas</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="584064866669693" type="LoadBawah">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="665736360997268" type="LoadAtas">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="670877287432509">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="329862273503187" type="LoadAtas">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="874858050650074" type="LoadBawah">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="574758851142886" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="463238123426637" type="LoadAtas">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="995618068316796" type="LoadBawah">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="338547429217885" type="Loading">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="183855426141220" type="Loading" />
+                        <action id="4" name="Set animation" sid="117985447347481" type="Loading">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="330624011896959">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="590794269062884" type="Loading">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="930791000873031" type="Loading" />
+                                <action id="-15" name="Set visible" sid="790969103058815" type="Loading">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="644317688947461" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="409671423516353" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="927386720772265" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="744112597844685" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="382057453109068" type="System">
+                                    <param id="0" name="Layout">Layout Karakter</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="391091577577993" type="LoadAtas">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="986311663335241" type="LoadBawah">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="120997663196033" type="LoadAtas">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="302248444323900" type="LoadBawah">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="608675629636668" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="504799955762536" title="GUI Beranda">
+            <sub-events>
+                <event-block sid="545887046682999">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="338585004175333" type="Touch">
+                            <param id="0" name="Object">MulaiTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="241283911428898" type="MulaiTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="419174865351052" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="124237185557004" type="MulaiTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="145185279025559" type="LoadBawah">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="553803259909838" type="LoadAtas">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="149181021465909" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="911695319470706" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="133052438512491">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="671251861415670" type="Touch">
+                            <param id="0" name="Object">BukuTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="618913795465906" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="993631897985532" type="BukuTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="230378112315015" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="834786461739341" type="BukuTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="365267571756051" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="532395035193980" type="System">
+                            <param id="0" name="Group name">&quot;GUI Buku&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="638643751287876" type="System">
+                            <param id="0" name="Layer">&quot;GUIPopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="468892596307944" type="PopUpText">
+                            <param id="0" name="Text">&quot;Buku Doa&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="797727725118826" type="LabelDoa11">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="379016946123360" type="LabelDoa12">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="658493665289386" type="LabelDoa13">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="652258270575300" type="LabelDoa21">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="420932710449882" type="LabelDoa22">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="103187478935548" type="LabelDoa23">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="215699526128035" type="LabelDoa31">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="998896786537071" type="LabelDoa32">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="552008277117825" type="LabelDoa33">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="333264432360344" type="Next">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="761052086785874" type="Prev">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="417826797677586" type="LabelLayout3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="200179371312995" type="TempKoin">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="847476443405032" type="TempStar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="243199201794069" type="LevelDicapai">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="683550220453397" type="LabelBoardSkor">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="594002311832572">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="567600503225620" type="Touch">
+                            <param id="0" name="Object">PetunjukTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="968548214452614" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="404013055066289" type="PetunjukTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="352672751762062" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="879590577956758" type="PetunjukTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="549115343129689" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="543573165567898" type="System">
+                            <param id="0" name="Group name">&quot;GUI Buku&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="298129718880352" type="System">
+                            <param id="0" name="Layer">&quot;GUIPopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="516831396284909" type="Petunjuk">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="979003724131955" type="PopUpText">
+                            <param id="0" name="Text">&quot;Petunjuk&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="323420902182872" type="Next">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="246658125760943" type="Prev">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="942781522888575" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="382547118723901" type="LabelDoa12">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="256544581566806" type="LabelDoa22">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="847996211463693" type="LabelDoa31">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="749864011762270" type="LabelDoa32">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="849371125341266" type="LabelDoa33">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="245160098073392" type="LabelDoa11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="910111011788090" type="LabelDoa13">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="718146214661804" type="LabelDoa21">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="907974761558378" type="LabelDoa23">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="996066048036872" type="LabelLayout3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="669040103466922" type="TempKoin">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="993839217644293" type="TempStar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="520925603872286" type="LevelDicapai">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="407936405640153" type="LabelBoardSkor">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="845535259566839">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="338131451888852" type="Touch">
+                            <param id="0" name="Object">TentangTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="266655407515256" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="949344629654580" type="TentangTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="179137933047618" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="378003374786495" type="TentangTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="912858200108379" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="388892122584752" type="System">
+                            <param id="0" name="Group name">&quot;GUI Keluar&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="638010611246808" type="System">
+                            <param id="0" name="Group name">&quot;GUI Buku&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="273892443305739" type="System">
+                            <param id="0" name="Layer">&quot;GUIPopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="538357797376954" type="PopUpText">
+                            <param id="0" name="Text">&quot;Tentang Kami&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="983630169023016" type="LabelDoa11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="485835363809606" type="LabelDoa12">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="439484894206004" type="LabelDoa13">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="817502773578822" type="LabelDoa21">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="710641836863527" type="LabelDoa22">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="445129113052664" type="LabelDoa23">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="136654948771476" type="LabelDoa31">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="930245152004660" type="LabelDoa32">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="126789625625056" type="LabelDoa33">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="581666653431473" type="Next">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="498699826181188" type="Prev">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="775252064982555" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="269754907939397" type="LabelLayout3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="147103288867445" type="LevelDicapai">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="648803123340577" type="TempKoin">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="665730887859804" type="TempStar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="426778074413844" type="LabelBoardSkor">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="229548774656214" type="LabelLayout3">
+                            <param id="0" name="Text">&quot;Credits by&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="213671043810836" type="TempStar">
+                            <param id="0" name="Text">&quot;Game Development by Muhammad Naufal&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="714844782951420" type="TempKoin">
+                            <param id="0" name="Text">&quot;Doa harian by Bagian kurikulum KMI Darussalam Gontor&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="114470232768882" type="LevelDicapai">
+                            <param id="0" name="Text">&quot;Music &amp; Sound by wavecont &amp; freesound.org&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="599875019483344" type="LabelBoardSkor">
+                            <param id="0" name="Text">&quot;BG Designed by valadzionak_volha &amp; starline  and mosque &amp; house asset by rawpixel.com &amp; pch.vector on freepik.com&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221078095787837">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="352780346429215" type="Touch">
+                            <param id="0" name="Object">RatingTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="859938991032425" type="RatingTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="937230965194011" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="399160134577219" type="RatingTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="8" name="Open URL in new window" sid="470922939842353" type="Browser">
+                            <param id="0" name="URL">&quot;https://play.google.com/store/apps/details?id=com.unidagontor.farihan&quot;</param>
+                            <param id="1" name="Tag">&quot;PlayStore&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="893916138969542">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="758435061690414" type="Touch">
+                            <param id="0" name="Object">SkorTombol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="329420777226057" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="237529973798929" type="SkorTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="150518833165140" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="563547180743774" type="SkorTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="639117316061311" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="309868851165623" type="System">
+                            <param id="0" name="Group name">&quot;GUI Keluar&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="529843998976692" type="System">
+                            <param id="0" name="Group name">&quot;GUI Buku&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="972877375505612" type="System">
+                            <param id="0" name="Layer">&quot;GUIPopUp&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="332578340530528" type="PopUpText">
+                            <param id="0" name="Text">&quot;Skor Tertinggi&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="397360564913373" type="LabelDoa12">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="423887988177712" type="LabelDoa22">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="353805249999505" type="LabelDoa31">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="526582346534743" type="LabelDoa32">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="749866070760651" type="LabelDoa33">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="154814838643755" type="LabelDoa11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="925393794263973" type="LabelDoa13">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="975244485521799" type="LabelDoa21">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="164347365678959" type="LabelDoa23">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="990455037076607" type="Next">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="899337791078014" type="Prev">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="297901510735069" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="419838359392461" type="LabelLayout3">
+                            <param id="0" name="Text">&quot;Selamat skor tertinggi kamu adalah :&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="441899836646816" type="TempKoin">
+                            <param id="0" name="Text">&quot;Koin terbanyak diraih : &quot;&amp;KoinTinggi</param>
+                        </action>
+                        <action id="0" name="Set text" sid="220664062309034" type="TempStar">
+                            <param id="0" name="Text">&quot;Star terbanyak diraih  : &quot;&amp;Startinggi</param>
+                        </action>
+                        <action id="0" name="Set text" sid="142573196992517" type="LevelDicapai">
+                            <param id="0" name="Text">&quot;Level tertinggi : &quot;&amp;skor</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="415547729397913" type="LabelLayout3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="767812490143178" type="TempKoin">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="402716415737934" type="TempStar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="345539400253948" type="LevelDicapai">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="522857994338504" type="LabelBoardSkor">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="335652543627881" type="StarYellowEffect" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="245893838321090">
+                            <conditions>
+                                <condition id="-9" name="Is visible" sid="710684417811858" type="Board" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="180986608715785" type="Board">
+                                    <param id="0" name="Object">StarYellowEffect</param>
+                                    <param id="1" name="Layer">&quot;GUIPopUp&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="998310321884513" type="StarYellowEffect" />
+                                <action id="0" name="Set spraying" sid="147734084902110" type="StarYellowEffect">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="305455274871550">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="750516054303596" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="981832627812467" type="LevelDicapai">
+                                    <param id="0" name="Text">&quot;Tidak Ditemukan&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="781292073147533" type="LabelLayout3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="333139278748804" type="TempKoin">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="487025243854215" type="TempStar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="116886974731411" type="LabelBoardSkor">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="379626517602741">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="321964020107288" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="284553217604831" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="731077577959784" type="LabelBoardSkor">
+                                    <param id="0" name="Text">&quot;Sayang sekali, hafalanmu masih kurang.. ayo menghafal lebih giat lagi.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="111044605052338">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="732323280984566" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="655092116123091" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="690478917636600" type="LabelBoardSkor">
+                                    <param id="0" name="Text">&quot;Hafalanmu lumayan cukup, tetapi masih perlu diperbaiki. ayo hafal lebih giat lagi.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="434918217498007">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="981974318097104" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="863088148664545" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="168118328374093" type="LabelBoardSkor">
+                                    <param id="0" name="Text">&quot;Wah, hafalanmu cukup bagus, tetapi belum sempurna. ayo hafal lebih giat lagi.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="508287743306934">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="144592137540118" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">15</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="836062520360510" type="System">
+                                    <param id="0" name="Variable">skor</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="384380561190899" type="LabelBoardSkor">
+                                    <param id="0" name="Text">&quot;Waw, hafalanmu bagus sekali, kamu berhasil menghafal dengan baik....&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="516266262272299">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="915482281582857" type="Touch">
+                            <param id="0" name="Object">SoundTombol</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="916044764414512" type="SoundTombol">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="325117291125248" type="SoundTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="162315442025996" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="676541598120014" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="644567582350473" type="Audio">
+                            <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="775727894894885" type="SoundTombol">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="674917000862018" type="SoundTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="734028642301739">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="592547359470412" type="Touch">
+                            <param id="0" name="Object">SoundTombol</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="489444994696739" type="SoundTombol">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="474940679436439" type="SoundTombol">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="335822475592122" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="938126138506167" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="497223539718872" type="Audio">
+                            <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="407009116372174" type="SoundTombol">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="890522814970021" type="SoundTombol">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="393442250466032" title="GUI Buku">
+            <sub-events>
+                <event-block sid="100642566686699">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="645587894127654" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="931588153089265" type="Prev">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657451056144990">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="392180727235746" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="239620311410622" type="Next">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="307323869546429">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="297431003015539" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="665239504260324" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="510513137430953" type="Next">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562366051997122">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="502805055098265" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="840408332643102">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="986412287510522" type="System">
+                                    <param id="0" name="Variable">Hal</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="654701129550014" type="Prev">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="608360087566862">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="699522031239218" type="System">
+                                    <param id="0" name="Variable">Hal</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="550225888307175" type="System">
+                                    <param id="0" name="Variable">Hal</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="595387176344399" type="Next">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="218869242874443">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="723669184286987" type="Touch">
+                            <param id="0" name="Object">Next</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="887021806828068" type="Next" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="397252424044337" type="Next">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="353500503133504" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="602428933219476" type="Next">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="134016649324060" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="595321669855492">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="489687369598020" type="Touch">
+                            <param id="0" name="Object">Prev</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="340405750277892" type="Prev" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="878738673568294" type="Prev">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="159391671272894" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="805212164016296" type="Prev">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="733780384696056" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="219203495669593">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="544870687520369" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="544472765703857" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="230492623296782" type="Petunjuk">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="869656567626591">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="659076038004313" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="777160945497877" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="319934196020318" type="Petunjuk">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="988770803435587">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="151159174855653" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="400978243359507" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="103278263447392" type="Petunjuk">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="601070974877859">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="218827794803529" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="680563512031679" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="646259549672589" type="Petunjuk">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="541801837604098">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="902451338455838" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="259058249232329" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Sebelum Tidur&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="138009166154082" type="LabelDoa12">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="880172758215564" type="LabelDoa12">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                        <action id="0" name="Set text" sid="927136987323577" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. بِاسْمِكَ اللَّهُمَّ أَحْيَا وَ بِاسْمِكَ أَمُوْتُ&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="490236302413285" type="LabelDoa13">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="761339097906104" type="LabelDoa13">
+                            <param id="0" name="Y">160</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="530107626744165" type="LabelDoa13">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="0" name="Set text" sid="453045596083544" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Bismika allahumma ahyaa wa bismika amuut&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="887057150881882" type="LabelDoa21">
+                            <param id="0" name="Y">208</param>
+                        </action>
+                        <action id="0" name="Set text" sid="916251334972887" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Sebelum Tidur&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="782463805066258" type="LabelDoa22">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="734974761779135" type="LabelDoa22">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                        <action id="0" name="Set text" sid="651481368000958" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. الْحَمْدُ لِلَّهِ الَّذِي أَحْيَاناَ بَعْـدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرِ&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="490483155046294" type="LabelDoa23">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="921007699515312" type="LabelDoa23">
+                            <param id="0" name="Y">264</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="823645692771388" type="LabelDoa23">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="0" name="Set text" sid="467247497049808" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Alhamdulillahil ladzi ahyana ba&apos;dama amatana wa ilayhin nusyur&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="146009381073673" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Masuk Kamar Mandi&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="380880021531666" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. اَللهُمَّ اِنّىْ اَعُوْذُبِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="800534062352122" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="0" name="Set text" sid="734442021608926" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Allahumma inni audzu bika minal khubutsi wal khabaits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346383021429763">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="568109910753565" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="213550296602203" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Keluar Kamar Mandi&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="874767044003410" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. الْحَمْدُ ِللهِ الَّذِىْ اَذْهَبَ عَنّى اْلاَذَى وَعَافَانِىْ&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="638316964260155" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Alhamdulillahil ladzii adzhaba &apos;annil adzaa wa &apos;aafani&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="954214237139204" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Masuk Rumah&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="935187399280889" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. بِسْمِ اللهِ وَلَجْنَا وَبِسْمِ اللهِ خَرَجْنَا وَعَلَى رَبِّنَا تَوَكَّلْنَا&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="621300013689459" type="LabelDoa23">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="0" name="Set text" sid="976457443550798" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Bismillaahi wa lajnaa wa bismillaahi kharajnaa wa &apos;alaa rabbinaa tawakkalna&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="235745538467103" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Keluar Rumah&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="252000880647635" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ لاَحَوْلَ وَلاَقُوَّةَ اِلاَّ بِاللهِ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="262266792645926" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">10</param>
+                        </action>
+                        <action id="0" name="Set text" sid="115632291685163" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Bismillahi tawakkaltu &apos;alallaahi laa haula wa laa quwwata illaa billaah&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453779706330138">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="737047100585851" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="150210965628076" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Masuk Masjid&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="272616767304784" type="LabelDoa12">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="0" name="Set text" sid="897842442964182" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. اَللّهُمَّ اغْفِرْلِي ذُنُوْبِي وَافْتَحْ لِيْ اَبْوَابَ رَحْمَتِكَ&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="560318171850515" type="LabelDoa13">
+                            <param id="0" name="Y">160</param>
+                        </action>
+                        <action id="0" name="Set text" sid="963366594654144" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Allahumaghfirlii dzunuubii waftahlii abwaaba rahmatik&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="542635719679733" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Keluar Masjid&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="907602350562124" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. اَللّهُمَّ اغْفِرْلِي ذُنُوْبِي وَافْتَحْ لِيْ اَبْوَابَ فَضْلِكَ&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="948734194443640" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Allahumaghfirlii dzunuubii waftahlii abwaaba fadhlik&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="420089632224290" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Sebelum Makan&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="365064535873294" type="LabelDoa32">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                        <action id="0" name="Set text" sid="183553065955831" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. الَّلهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="125135326072851" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="508627908987025" type="LabelDoa33">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="515957293055533" type="LabelDoa33">
+                            <param id="0" name="Y">368</param>
+                        </action>
+                        <action id="0" name="Set text" sid="971150568912004" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Allahumma baarik lana fiima razaqtanaa wa qinaa &apos;adzaaban naar&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="489116553410149">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="992752563383906" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="991329231053881" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Sesudah Makan&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="305296027908300" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. اَلْحَمْدُ ِللهِ الَّذِيْ اَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِيْنَ&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="960405660082275" type="LabelDoa13">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="0" name="Set text" sid="267635363634217" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Alhamdulillahil ladzii ath&apos;amanaa wa saqaanaa wa ja&apos;alanaa minal muslimiin&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="308209670632812" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Bercermin&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="133331754949342" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. اَللَّهُـمَّ كَمَا حَسَّـنْتَ خَلْقِـيْ فَحَسِّـنْ خُلُقِـيْ&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="625455287534514" type="LabelDoa23">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="0" name="Set text" sid="479737563400866" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Allahumma kamaa hasanta khalqii fahassin khuluqi&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="232011137439956" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Memakai Baju&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="867434780210018" type="LabelDoa32">
+                            <param id="0" name="Size (pt)">13</param>
+                        </action>
+                        <action id="0" name="Set text" sid="446431431846962" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. الْحَمْدُ لِلَّهِ الَّذِى كَسَانِى هَذَا الثَّوْبَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّى وَلاَ قُوَّةٍ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="416373511930029" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">10</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="391876135660922" type="LabelDoa33">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="163315585084075" type="LabelDoa33">
+                            <param id="0" name="Y">360</param>
+                        </action>
+                        <action id="0" name="Set text" sid="812915515675137" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Alhamdulillahil ladzii kasaanii hadzats tsauba wa razaqaniihi min ghairi haulin minnii wa laa quwwah&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="297262398633646">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="440943864772137" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="909860410366487" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Menjelang Pagi&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="582272488986858" type="LabelDoa12">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="0" name="Set text" sid="891140096685099" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. اَللهُمَّ بِكَ اَصْبَحْنَا وَبِكَ اَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوْتُ وَاِلَيْكَ النُّشُوْرُ&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="792963097168469" type="LabelDoa13">
+                            <param id="0" name="Y">160</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="919280197179588" type="LabelDoa13">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="875332566242638" type="LabelDoa13">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="0" name="Set text" sid="236561708265872" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Allahumma bika ashbahnaa wa bika amsaynaa wa bika nahyaa wa bika namuutu wa ilaykan nusyuur&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="825672712509644" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Menjelang Sore&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="351327656526704" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. اَللهُمَّ بِكَ اَمْسَيْنَا وَبِكَ اَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوْتُ وَاِلَيْكَ الْمَصِيْرُ&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="648929816725604" type="LabelDoa23">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="0" name="Set text" sid="272367419756447" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Allahumma bika amsaynaa wa bika ashbahnaa wa bika nahyaa wa bika namuutu wa ilaikal mashiir&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="596876143252542" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Sebelum Belajar&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="612909261458953" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. رَبِّ زِدْنِي عِلْمًا وَارْزُقْنِيْ فَهْمًا&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="962129534080478" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="849316880854133" type="LabelDoa33">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="709093868012149" type="LabelDoa33">
+                            <param id="0" name="Y">368</param>
+                        </action>
+                        <action id="0" name="Set text" sid="585694033814919" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Rabbi zidnii &apos;ilman warzuqnii fahman&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="714695615133867" type="LabelDoa32">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="543062627809225">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="222426654386248" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="480789796010556" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Sesudah Belajar&quot;</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="318012427416848" type="LabelDoa12">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="853672844473305" type="LabelDoa12">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                        <action id="0" name="Set text" sid="244175345016811" type="LabelDoa12">
+                            <param id="0" name="Text">&quot; اللَّهُمَّ قَدِ اسْتَوْدَعْنَاكَ مَا عَلَّمْتَنَاهُ فَارْدُدْهُ إِلَيْنَا عِنْدَ حَاجَاتِنَا إِلَيْهِ وَ لَا تُنْسِنَا عَنْهُ يَا رَبَّ العَالَمِيْنَ&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="639401258942050" type="LabelDoa13">
+                            <param id="0" name="Y">168</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="711452006268535" type="LabelDoa13">
+                            <param id="0" name="Height">48</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="908686100305852" type="LabelDoa13">
+                            <param id="0" name="Size (pt)">10</param>
+                        </action>
+                        <action id="0" name="Set text" sid="216271718017718" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;ِAllahumma qodis tauda&apos;naaka maa &apos;allamtanaahu fardudhu ilaynaa &apos;inda haajaatinaa ilayhi wa laa tunsinaa &apos;anhu yaa rabbal &apos;aalamiin&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="180170429063569" type="LabelDoa21">
+                            <param id="0" name="Y">208</param>
+                        </action>
+                        <action id="0" name="Set text" sid="809815178373916" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Niat Sebelum Wudhu&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="127988659353582" type="LabelDoa22">
+                            <param id="0" name="Y">232</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="486418483992579" type="LabelDoa22">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="222739098642108" type="LabelDoa22">
+                            <param id="0" name="Size (pt)">14</param>
+                        </action>
+                        <action id="0" name="Set text" sid="521865906928802" type="LabelDoa22">
+                            <param id="0" name="Text">&quot;. نَوَيْتُ ﺍﻟْﻮُﺿُﻮْﺀَ ﻟِﺮَﻓْﻊِ ﺍﻟْﺤَﺪَﺙِ ﺍْﻻَﺻْﻐَﺮِ ﻓَﺮْﺿًﺎ ِﻟﻠﻪِ ﺗَﻌَﺎﻟَﻰ&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="753556413431109" type="LabelDoa23">
+                            <param id="0" name="Y">264</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="370445057334637" type="LabelDoa23">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="760756271756323" type="LabelDoa23">
+                            <param id="0" name="Size (pt)">11</param>
+                        </action>
+                        <action id="0" name="Set text" sid="849831253689672" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Nawaytul wudhu-a liraf&apos;il hadatsil ashghari fardhan lillaahi ta&apos;aala&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="322963883509210" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;Doa Sesudah Iqamah&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="506997647190142" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;. اَقَامَهَا اللهُ وَاَدَامَهَا مَادَامَتِ السَّمَوَاتُ وَاْلاَرْضُ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="635296189486823" type="LabelDoa33">
+                            <param id="0" name="Size (pt)">10</param>
+                        </action>
+                        <action id="0" name="Set text" sid="807292928704463" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;Aqaamaha llaahu wa adaamahaa maa daamatis samawaatu wal ardh&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="512371204717367">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="810447540195270" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="309877791805910" type="LabelDoa11">
+                            <param id="0" name="Text">&quot;Doa Sesudah Wudhu&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="739744678148052" type="LabelDoa12">
+                            <param id="0" name="Size (pt)">12</param>
+                        </action>
+                        <action id="0" name="Set text" sid="883697641424058" type="LabelDoa12">
+                            <param id="0" name="Text">&quot;. أَشْهَدُ اَنْ لاَ اِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ. اَللّٰهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ، وَاجْعَلْنِيْ مِنْ عِبَادِكَ الصَّالِحِيْنَ&quot;</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="908923016281992" type="LabelDoa13">
+                            <param id="0" name="Size (pt)">9.5</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="242601886596860" type="LabelDoa13">
+                            <param id="0" name="Height">64</param>
+                        </action>
+                        <action id="0" name="Set text" sid="222801563234012" type="LabelDoa13">
+                            <param id="0" name="Text">&quot;Asyhadu allaa ilaaha illallah wahdahu laa syariikalahu .Wa asyhadu anna Muhammadan ’abduhu wa rasuuluhu. Allahummaj alnii minat tawwabiina waj alnii minal mutathohhiriina waj alnii min ‘ibaadikas shaalihiin&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="873405621347620" type="LabelDoa21">
+                            <param id="0" name="Y">224</param>
+                        </action>
+                        <action id="0" name="Set text" sid="416662964964013" type="LabelDoa21">
+                            <param id="0" name="Text">&quot;Doa Sesudah Azan&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="689759914382452" type="LabelDoa22">
+                            <param id="0" name="Y">240</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="494824832419243" type="LabelDoa22">
+                            <param id="0" name="Height">80</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="845347336083939" type="LabelDoa22">
+                            <param id="0" name="Size (pt)">13</param>
+                        </action>
+                        <action id="0" name="Set text" sid="142414652510897" type="LabelDoa22">
+                            <param id="0" name="Text">&quot; اَللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّآمَّةِ وَالصَّلاَةِ الْقَآئِمَةِ آتِ مُحَمَّدَانِ الْوَسِيْلَةَ وَالْفَضِيْلَةَ وَالشَّرَفَ وَالدَّرَجَةَ الْعَالِيَةَ الرَّفِيْعَةَ وَابْعَثْهُ مَقَامًا مَحْمُوْدَانِ الَّذِىْ وَعَدْتَهُ اِنَّكَ لاَ تُخْلِفُ الْمِيْعَادَ&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="255260384500163" type="LabelDoa23">
+                            <param id="0" name="Y">304</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="112591209523449" type="LabelDoa23">
+                            <param id="0" name="Height">80</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="150427497201172" type="LabelDoa23">
+                            <param id="0" name="Size (pt)">9.5</param>
+                        </action>
+                        <action id="0" name="Set text" sid="762651875917240" type="LabelDoa23">
+                            <param id="0" name="Text">&quot;Allaahumma robba haadzihid da’watit taammah, washsholaatil qoo-imah, aati muhammadanil washiilata wal fadhiilah, wasysyarofa, wad darajatal, ‘aaliyatar rofii’ah, wab’atshu maqoomam mahmuudanil ladzii wa’adtah, innaka laa tukhliful mii’aad&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="804820933110582" type="LabelDoa31">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="825795823901436" type="LabelDoa32">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="207233079550748" type="LabelDoa33">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="138378545359589" title="GUI Keluar">
+            <sub-events>
+                <event-block sid="614393495518793">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="651914746868130" type="Touch">
+                            <param id="0" name="Object">Quit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="170707689860469" type="Quit">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="779364770583922" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="209954362048320" type="Quit">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="920801264007372" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="622988262186567" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="917763409255539" type="System">
+                            <param id="0" name="Layer">&quot;GUIPopUp&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="972039178753171" type="System">
+                            <param id="0" name="Group name">&quot;GUI Buku&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="220899413195013" type="System">
+                            <param id="0" name="Variable">Hal</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="335586103485468" type="System">
+                            <param id="0" name="Variable">Petunjuk</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="524594420969898" type="Petunjuk">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

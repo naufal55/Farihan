@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Karakter</name>
+    <events>
+        <variable constant="0" name="beliA" sid="846930540198207" static="0" type="number">2</variable>
+        <variable constant="0" name="beliB" sid="615459153938336" static="0" type="number">2</variable>
+        <variable constant="0" name="Karakter" sid="749718538150444" static="0" type="number">0</variable>
+        <event-block sid="496086367456853">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="793087949741783" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="609589736715810" type="TxtKoin">
+                    <param id="0" name="Text">koin</param>
+                </action>
+                <action id="0" name="Set text" sid="604059763897994" type="ExpPoin">
+                    <param id="0" name="Text">star</param>
+                </action>
+                <action id="-9" name="Set value" sid="253512954854895" type="System">
+                    <param id="0" name="Variable">beliA</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="5" name="Check item exists" sid="848543959958530" type="LocalStorage">
+                    <param id="0" name="Key">&quot;beliA&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="904444469807200" type="LocalStorage">
+                    <param id="0" name="Key">&quot;beliB&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="588179487602469" type="Notif1">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="126450008236527" type="LabelLayout">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="879401881663173" type="ExpPoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="991418371935140" type="TxtKoin">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="968878054799339">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="877745498515576" type="System">
+                            <param id="0" name="Variable">beliA</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="542369126736633" type="Pilih1">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="104154768435419">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="998517416558077" type="System">
+                            <param id="0" name="Variable">beliB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="815023306209732" type="Pilih2">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="825055292642364">
+            <conditions>
+                <condition id="9" name="On item exists" sid="318984623876226" type="LocalStorage">
+                    <param id="0" name="Key">&quot;beliA&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="655604698417655" type="System">
+                    <param id="0" name="Variable">beliA</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="971584247932903">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="719213181435996" type="System">
+                            <param id="0" name="Variable">beliA</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="591152791532436" type="Pilih1">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="801787760622767">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="256800590743175" type="System">
+                            <param id="0" name="Variable">beliA</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="135941567875714" type="Pilih1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="248953224531693">
+            <conditions>
+                <condition id="9" name="On item exists" sid="767028596911639" type="LocalStorage">
+                    <param id="0" name="Key">&quot;beliB&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="317459006898693" type="System">
+                    <param id="0" name="Variable">beliB</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="499331532942532">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="883174689897717" type="System">
+                            <param id="0" name="Variable">beliB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="395573203974697" type="Pilih2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="583255734510102">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="624562408921482" type="System">
+                            <param id="0" name="Variable">beliB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="379542080494364" type="Pilih2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="899856358312050">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="854372407358233" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="158687966953167" type="anyclick" />
+                <action id="-3" name="Set position" sid="513723813457549" type="anyclick">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="0" name="Set spraying" sid="346955053977935" type="anyclick">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="900799020433092">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="131121844962304" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set spraying" sid="403063504447856" type="anyclick">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="185009516235633" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="231085494280377" title="Gestures Load2">
+            <sub-events>
+                <event-block sid="533713668931146">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="249165849489125" type="LoadBawah" />
+                        <condition id="-4" name="Is outside layout" sid="405840114077156" type="LoadAtas" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="552227053200713" type="Loading" />
+                        <action id="-9" name="Destroy" sid="725547880586028" type="LoadBawah" />
+                        <action id="-9" name="Destroy" sid="999600542565557" type="LoadAtas" />
+                        <action id="0" name="Spawn another object" sid="702901623380986" type="TempatLayar">
+                            <param id="0" name="Object">LoadBawah</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="912532984373312" type="TempatLayar">
+                            <param id="0" name="Object">LoadAtas</param>
+                            <param id="1" name="Layer">&quot;Load&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="123080167064937" type="LoadBawah">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="495820173075020" type="LoadAtas">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="131661376066190" type="System">
+                            <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="919245818233638">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="129107141347804" type="LoadAtas">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="291257395749161" type="LoadBawah">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="612908643047265" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="273576453343669" type="LoadAtas">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="924316600991914" type="LoadBawah">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="649533363591391" type="Loading">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="413018420527961" type="Loading" />
+                        <action id="4" name="Set animation" sid="363442951822081" type="Loading">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="824413321222139">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="378729151948189" type="Loading">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="556649463588947" type="Loading" />
+                                <action id="-2" name="Go to layout" sid="782378328034463" type="System">
+                                    <param id="0" name="Layout">Layout Menu</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="863433691699670" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="224382866574285" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="434736493988203" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="364505377581313" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="898327825167354" type="LoadAtas">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="782648229313618" type="LoadBawah">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="400335980469493" type="LoadAtas">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="567549982469793" type="LoadBawah">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="888724734158577" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="172139190161769">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="351902107872594" type="LoadAtas">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="783230908897797" type="LoadBawah">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">240</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="541685446743766" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="363349378115774" type="LoadAtas">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="369993461533210" type="LoadBawah">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="237750845862814" type="Loading">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="592907033282915" type="Loading" />
+                        <action id="4" name="Set animation" sid="671293855136567" type="Loading">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="838649776923642">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="967720401178229" type="Loading">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="431457992733410" type="Loading" />
+                                <action id="-2" name="Go to layout" sid="311343830237947" type="System">
+                                    <param id="0" name="Layout">Layout Game</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="553761437515785" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="830815063709603" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="912601501897747" type="LoadAtas">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="392413499529534" type="LoadBawah">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="723148481977493" type="LoadAtas">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="558398792248658" type="LoadBawah">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="648396326451588" type="LoadAtas">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="594029388928099" type="LoadBawah">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="776354743452472" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="945978220975599" title="GUI Beranda2">
+            <sub-events>
+                <event-block sid="215582398525501">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="636373841026032" type="System">
+                            <param id="0" name="Variable">koin</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="700069984592839">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="771463891542752" type="Touch">
+                                    <param id="0" name="Object">Pilih1</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="620607295044596" type="Pilih1">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="224941342391734" type="Notif1">
+                                    <param id="0" name="Text">&quot;Apakah kamu yakin ingin membeli karakter ini?&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="432416971190748" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="615521556406766" type="Pilih1">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="190362049410323" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="622335974484664" type="Pilih1">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="495492349466295" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="926117274908690" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="498616611697210" type="System">
+                                    <param id="0" name="Layer">&quot;Notif&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="378422819597209" type="Pilgan">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="240354168140925" type="ok">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="701645225276807">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="579682232586538" type="Touch">
+                                    <param id="0" name="Object">Pilih2</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="346726172475490" type="Pilih2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="977586430536593" type="Notif1">
+                                    <param id="0" name="Text">&quot;Apakah kamu yakin ingin membeli karakter ini?&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="781859060671585" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="397109969904172" type="Pilih2">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="946010388668075" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="922614434754982" type="Pilih2">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="456090956460117" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="859993436150542" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="159763925881812" type="System">
+                                    <param id="0" name="Layer">&quot;Notif&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="665803595404301" type="Pilgan">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="879314610053329" type="ok">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="292805692295650">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="609436033016012" type="System">
+                            <param id="0" name="Variable">koin</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="604117531906494">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="714367365634184" type="Touch">
+                                    <param id="0" name="Object">Pilih1</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="647241386066541" type="Pilih1">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="800962508582449" type="Notif1">
+                                    <param id="0" name="Text">&quot;Koin tidak cukup&quot;</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="609904440602438" type="Pilih1">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="770299673834739" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="265686592317141" type="Pilih1">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="402689552122792" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="971034697237046" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="590181506778697" type="System">
+                                    <param id="0" name="Layer">&quot;Notif&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="721533180911395" type="Pilgan">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="374154836818645" type="ok">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="372335561816287">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="370343301162633" type="Touch">
+                                    <param id="0" name="Object">Pilih2</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="946320854730449" type="Pilih2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="610563531814555" type="Notif1">
+                                    <param id="0" name="Text">&quot;Koin tidak cukup&quot;</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="741717631099656" type="Pilih2">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="167177501610577" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="223226833116583" type="Pilih2">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="274085376625522" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="281662996244731" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="260839360965853" type="System">
+                                    <param id="0" name="Layer">&quot;Notif&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="445035053188359" type="Pilgan">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="237359958682512" type="ok">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="283981531790103">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="423026034445033" type="Touch">
+                            <param id="0" name="Object">Pilih1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="273298330847169" type="Pilih1">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="338968285396203" type="Pilih1">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="371297359437555" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="873340713589188" type="Pilih1">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="808233172532203" type="Pilih1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="379235678075268" type="System">
+                            <param id="0" name="Variable">beliA</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="539019815257934" type="LocalStorage">
+                            <param id="0" name="Key">&quot;beliA&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="972669964140942">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="144335187793853" type="Pilih2">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="618717491832690" type="Pilih2">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="180731965466933" type="System">
+                                    <param id="0" name="Variable">beliB</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Set item" sid="756863775730318" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;beliB&quot;</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="370478343229977">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="584277086742867" type="Touch">
+                            <param id="0" name="Object">Pilih2</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="734330258979908" type="Pilih2">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="624533710816774" type="Pilih2">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="601786464822398" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="893482929674571" type="Pilih2">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="638637357962033" type="Pilih2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="362684428951775" type="System">
+                            <param id="0" name="Variable">beliB</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="740875104385879" type="LocalStorage">
+                            <param id="0" name="Key">&quot;beliB&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="302578808658497">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="602300480544504" type="Pilih1">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="357790695899472" type="Pilih1">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="339541680085696" type="System">
+                                    <param id="0" name="Variable">beliA</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Set item" sid="703773842236184" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;beliA&quot;</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="250680681631768">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="110592759419409" type="Touch">
+                            <param id="0" name="Object">BackButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="254763997675558" type="BackButton">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="510724868790478" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="790540283115216" type="BackButton">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="364558904849799" type="LoadBawah">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="987181703751823" type="LoadAtas">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="409810931953778" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="728168937202610" type="System">
+                            <param id="0" name="Variable">LayoutLoader</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="572577224726978">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="610042573518836" type="Touch">
+                            <param id="0" name="Object">Lanjut</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="419721816762706">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="919575649270412" type="Pilih1">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="687777623560044" type="Pilih2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="9" name="Set scale" sid="840172029725562" type="Lanjut">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="840748340808416" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="214478020496601" type="Lanjut">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="439399864008330" type="LoadBawah">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="734015172972542" type="LoadAtas">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="992449533394721" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="141598916085039" type="System">
+                                    <param id="0" name="Variable">LayoutLoader</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="607230404736260">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="246299073742423" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="721582001261935" type="Notif1">
+                                    <param id="0" name="Text">&quot;Kamu harus pilih 1 karakter terlebih dahulu&quot;</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="854325983295254" type="Lanjut">
+                                    <param id="0" name="Scale">0.9</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="626427996702726" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="296571333894513" type="Lanjut">
+                                    <param id="0" name="Scale">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="433596035517612" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="112623501315521" type="System">
+                                    <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="347265745098560" type="System">
+                                    <param id="0" name="Layer">&quot;Notif&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="779852811000840" type="Pilgan">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="890036583132878" type="ok">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="876835478807284" title="GUI Decision">
+            <sub-events>
+                <event-block sid="861002094513431">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="199426825095738" type="Touch">
+                            <param id="0" name="Object">Pilgan</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="577632245110440" type="Pilgan">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="107796579817498" type="Pilgan" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="826555807239384" type="Pilgan">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="227581381799227" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="416221983020836" type="Pilgan">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="501720297931634" type="System">
+                            <param id="0" name="Layer">&quot;Notif&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="858839468237375" type="System">
+                            <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="617403778991385" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="260974646675072" type="System">
+                            <param id="0" name="Variable">koin</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="0" name="Set item" sid="685740818483560" type="LocalStorage">
+                            <param id="0" name="Key">&quot;KoinStor&quot;</param>
+                            <param id="1" name="Value">koin</param>
+                        </action>
+                        <action id="0" name="Set text" sid="367399992736713" type="TxtKoin">
+                            <param id="0" name="Text">koin</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="738250918414307">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="216638027401014" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="942762983773683" type="Pilih1">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="636708323267630" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="973493721971732" type="System">
+                                    <param id="0" name="Variable">beliA</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="515383814254957" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;beliA&quot;</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="743985176677424">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="635452027397347" type="Pilih2">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="510829537285674" type="Pilih2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="286040219083684" type="System">
+                                            <param id="0" name="Variable">beliB</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Set item" sid="492281453912771" type="LocalStorage">
+                                            <param id="0" name="Key">&quot;beliB&quot;</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="178094278744662">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="390685311443213" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="572496016836970" type="Pilih2">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="493966366944131" type="System">
+                                    <param id="0" name="Variable">Karakter</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="880527989103051" type="System">
+                                    <param id="0" name="Variable">beliB</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="140903751526690" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;beliB&quot;</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="321372382231662">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="562071969442090" type="Pilih1">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="709973123481766" type="Pilih1">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="217114616689751" type="System">
+                                            <param id="0" name="Variable">beliA</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Set item" sid="487857953604822" type="LocalStorage">
+                                            <param id="0" name="Key">&quot;beliA&quot;</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="987064565060719">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="708389064452012" type="Touch">
+                            <param id="0" name="Object">Pilgan</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="272561238387965" type="Pilgan">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="481895570196868" type="Pilgan" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="436109735281781" type="Pilgan">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="883606226754652" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="659096574426291" type="Pilgan">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="532715194085819" type="System">
+                            <param id="0" name="Layer">&quot;Notif&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="350023246397046" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="879283770859730" type="System">
+                            <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="467542426225421">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="235443499161774" type="Touch">
+                            <param id="0" name="Object">ok</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="645222493696102" type="ok" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="184215175371435" type="ok">
+                            <param id="0" name="Scale">0.9</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="993178566083896" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="551209079799298" type="ok">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="386157043278251" type="System">
+                            <param id="0" name="Layer">&quot;Notif&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="650486826118839" type="System">
+                            <param id="0" name="Group name">&quot;GUI Decision&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="703714062184597" type="System">
+                            <param id="0" name="Group name">&quot;GUI Beranda2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

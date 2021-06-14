@@ -1,0 +1,1924 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>FARIHAN</name>
+    <description>Permainan Doa Harian</description>
+    <version>1.0.0.0</version>
+    <author>Muhammad Naufal</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.DGnG.Farihan</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Layout Mulai</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Assets">
+            <object-type name="BGGame" sid="265915375098506">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\bg.png" />
+            </object-type>
+            <object-type name="BGName" sid="951923428691202">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879627429745772" speed="5">
+                        <frame duration="1" hotspotX="0.501424" hotspotY="0.510638" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\bgname.png">
+                            <collision-poly>
+                                <point x="0.002849" y="0.0217391" />
+                                <point x="0.498576" y="0" />
+                                <point x="0.997151" y="0.0217391" />
+                                <point x="0.940171" y="0.543478" />
+                                <point x="0.498576" y="1" />
+                                <point x="0.002849" y="0.978261" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BGPopup" sid="572540018377713">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\bg.jpg" />
+            </object-type>
+            <object-type name="BukuTombol" sid="685354086135298">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="menu" pingpong="0" repeatcount="1" repeatto="0" sid="746941778597403" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tombolmenu.png">
+                            <collision-poly>
+                                <point x="0" y="0.253147" />
+                                <point x="0.496774" y="0" />
+                                <point x="1" y="0.251972" />
+                                <point x="1" y="0.502797" />
+                                <point x="1" y="0.608168" />
+                                <point x="1" y="0.746853" />
+                                <point x="0.490323" y="1" />
+                                <point x="0" y="0.742657" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SkorTombol" sid="544128102528247">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="menu" pingpong="0" repeatcount="1" repeatto="0" sid="909472076975577" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\skortertinggi.png">
+                            <collision-poly>
+                                <point x="0" y="0.253147" />
+                                <point x="0.496774" y="0" />
+                                <point x="1" y="0.251972" />
+                                <point x="1" y="0.502797" />
+                                <point x="1" y="0.608168" />
+                                <point x="1" y="0.746853" />
+                                <point x="0.490323" y="1" />
+                                <point x="0" y="0.742657" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="koin" sid="670240611098808">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240928441550678" speed="5">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.52" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\koin.png">
+                            <collision-poly>
+                                <point x="0.177914" y="0.109434" />
+                                <point x="0.496933" y="0.00377358" />
+                                <point x="0.828221" y="0.10566" />
+                                <point x="1" y="0.498113" />
+                                <point x="0.822086" y="0.890566" />
+                                <point x="0.496933" y="0.996226" />
+                                <point x="0.177914" y="0.890566" />
+                                <point x="0.00613497" y="0.498113" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MulaiTombol" sid="470698339169765">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="menu" pingpong="0" repeatcount="1" repeatto="0" sid="572328486507612" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tombolmenu.png">
+                            <collision-poly>
+                                <point x="0" y="0.253147" />
+                                <point x="0.496774" y="0" />
+                                <point x="1" y="0.251972" />
+                                <point x="1" y="0.502797" />
+                                <point x="1" y="0.608168" />
+                                <point x="1" y="0.746853" />
+                                <point x="0.490323" y="1" />
+                                <point x="0" y="0.742657" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RatingTombol" sid="708916847679223">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="menu" pingpong="0" repeatcount="1" repeatto="0" sid="447721220274673" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tombolmenu.png">
+                            <collision-poly>
+                                <point x="0" y="0.253147" />
+                                <point x="0.496774" y="0" />
+                                <point x="1" y="0.251972" />
+                                <point x="1" y="0.502797" />
+                                <point x="1" y="0.608168" />
+                                <point x="1" y="0.746853" />
+                                <point x="0.490323" y="1" />
+                                <point x="0" y="0.742657" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TentangTombol" sid="862629165738173">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="menu" pingpong="0" repeatcount="1" repeatto="0" sid="381896952189409" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tombolmenu.png">
+                            <collision-poly>
+                                <point x="0" y="0.253147" />
+                                <point x="0.496774" y="0" />
+                                <point x="1" y="0.251972" />
+                                <point x="1" y="0.502797" />
+                                <point x="1" y="0.608168" />
+                                <point x="1" y="0.746853" />
+                                <point x="0.490323" y="1" />
+                                <point x="0" y="0.742657" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="star" sid="163628939556335">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318160388468517" speed="5">
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\star.png">
+                            <collision-poly>
+                                <point x="0.317829" y="0.336066" />
+                                <point x="0.5" y="0.00409836" />
+                                <point x="0.682171" y="0.336066" />
+                                <point x="0.879845" y="0.5" />
+                                <point x="0.763566" y="0.75" />
+                                <point x="0.5" y="0.827869" />
+                                <point x="0.232558" y="0.754098" />
+                                <point x="0.120155" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="LoadAtas" sid="381541746473229">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="772448790418764">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262414950999155" speed="5">
+                        <frame duration="1" hotspotX="0.891975" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\TopBGLoad.png">
+                            <collision-poly>
+                                <point x="0.0148145" y="0.0235015" />
+                                <point x="0.985185" y="0.0235015" />
+                                <point x="0.985185" y="0.986722" />
+                                <point x="0.0148145" y="0.986722" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="LoadBawah" sid="348497877774786">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="305240228809531">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468766303940673" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\BotBGLoad.png">
+                            <collision-poly>
+                                <point x="0.993031" y="0.00197628" />
+                                <point x="0.993031" y="0.998024" />
+                                <point x="0.00696862" y="0.998024" />
+                                <point x="0.00696862" y="0.00197628" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TempatLayar" sid="677798713444580">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804242615785722" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Quit" sid="832247910052782">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166776606043284" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\exit.png">
+                            <collision-poly>
+                                <point x="0.159707" y="0.159707" />
+                                <point x="0.498789" y="0.0216528" />
+                                <point x="0.837871" y="0.162129" />
+                                <point x="0.978347" y="0.498789" />
+                                <point x="0.837871" y="0.837871" />
+                                <point x="0.498789" y="0.980769" />
+                                <point x="0.159707" y="0.840293" />
+                                <point x="0.0192308" y="0.498789" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Board" sid="286357586581350">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913995396817267" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\board+flag.png">
+                            <collision-poly>
+                                <point x="0.0207941" y="0.0246433" />
+                                <point x="0.5" y="0.00878339" />
+                                <point x="0.97254" y="0.0325732" />
+                                <point x="0.993278" y="0.49956" />
+                                <point x="0.979207" y="0.975357" />
+                                <point x="0.5" y="0.991217" />
+                                <point x="0.0274601" y="0.967426" />
+                                <point x="0.00672165" y="0.49956" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BackButton" sid="995388938326615">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109667749326751" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\back.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.0348858" />
+                                <point x="0.774236" y="0.25956" />
+                                <point x="0.986768" y="0.5" />
+                                <point x="0.774236" y="0.74044" />
+                                <point x="0.5" y="0.965114" />
+                                <point x="0.0166598" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pilih1" sid="640303146458823">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911178794934736" speed="0">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\pilih.png">
+                            <collision-poly>
+                                <point x="0.0120643" y="0.0337079" />
+                                <point x="0.5" y="0.00374532" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0134048" y="0.962547" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\terpilih.png">
+                            <collision-poly>
+                                <point x="0.0166119" y="0.0455923" />
+                                <point x="0.5" y="0.0200433" />
+                                <point x="0.983388" y="0.0455923" />
+                                <point x="0.983388" y="0.954408" />
+                                <point x="0.5" y="0.983607" />
+                                <point x="0.0166119" y="0.954408" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\beli.png">
+                            <collision-poly>
+                                <point x="0.0134048" y="0.0374532" />
+                                <point x="0.5" y="0.00749064" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.996255" />
+                                <point x="0.0120643" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lanjut" sid="291976584390371">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="569734470117074" speed="0">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Lanjut.png">
+                            <collision-poly>
+                                <point x="0.0160935" y="0.0435432" />
+                                <point x="0.5" y="0.0231809" />
+                                <point x="0.983906" y="0.0435432" />
+                                <point x="0.985173" y="0.95985" />
+                                <point x="0.5" y="0.980213" />
+                                <point x="0.0160935" y="0.956457" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pilih2" sid="311300908975346">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200150741316871" speed="0">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\pilih.png">
+                            <collision-poly>
+                                <point x="0.0120643" y="0.0337079" />
+                                <point x="0.5" y="0.00374532" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0134048" y="0.962547" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\terpilih.png">
+                            <collision-poly>
+                                <point x="0.0166119" y="0.0455923" />
+                                <point x="0.5" y="0.0200433" />
+                                <point x="0.983388" y="0.0455923" />
+                                <point x="0.983388" y="0.954408" />
+                                <point x="0.5" y="0.983607" />
+                                <point x="0.0166119" y="0.954408" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\beli.png">
+                            <collision-poly>
+                                <point x="0.0134048" y="0.0374532" />
+                                <point x="0.5" y="0.00749064" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.996255" />
+                                <point x="0.0120643" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Beli" sid="570844006679030">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925436669171409" speed="5">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\beli.png">
+                            <collision-poly>
+                                <point x="0.0120643" y="0.0337079" />
+                                <point x="0.5" y="0.00374532" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0120643" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BoardNotif" sid="334815406417587">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643400614933608" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\BoardNotif.png">
+                            <collision-poly>
+                                <point x="0.0120644" y="0.0337079" />
+                                <point x="0.5" y="0.00749063" />
+                                <point x="0.987935" y="0.0337079" />
+                                <point x="0.987935" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0120644" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pilgan" sid="208851279212575">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889950220766056" speed="0">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\ya.png">
+                            <collision-poly>
+                                <point x="0.0120643" y="0.0337079" />
+                                <point x="0.5" y="0.00374532" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0120643" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tidak.png">
+                            <collision-poly>
+                                <point x="0.0179079" y="0.0489961" />
+                                <point x="0.5" y="0.020016" />
+                                <point x="0.982092" y="0.0489961" />
+                                <point x="0.980768" y="0.947381" />
+                                <point x="0.5" y="0.976362" />
+                                <point x="0.0179079" y="0.951004" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="KeluarGame" sid="634543069734526">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287200348748485" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\KeluarGame.png">
+                            <collision-poly>
+                                <point x="0.0340557" y="0.0351438" />
+                                <point x="0.498452" y="0.00319489" />
+                                <point x="0.733746" y="0.27476" />
+                                <point x="0.993808" y="0.498403" />
+                                <point x="0.733746" y="0.72524" />
+                                <point x="0.498452" y="0.99361" />
+                                <point x="0.0371517" y="0.961661" />
+                                <point x="0.00309598" y="0.498403" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TempatKalimat" sid="198897066629224">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="use" sid="514749454099835" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983792613037956" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tempat.png">
+                            <collision-poly>
+                                <point x="0.0167128" y="0.0462687" />
+                                <point x="0.49933" y="0.0238623" />
+                                <point x="0.983287" y="0.0462687" />
+                                <point x="0.983287" y="0.953731" />
+                                <point x="0.49933" y="0.976138" />
+                                <point x="0.0167128" y="0.953731" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BoardArab" sid="695947368311875">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426439493583058" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\BoardGame.png">
+                            <collision-poly>
+                                <point x="0.100415" y="0" />
+                                <point x="0.23308" y="0" />
+                                <point x="0.294043" y="0.0914749" />
+                                <point x="1" y="0.108289" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.000637959" y="0.136812" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BoardLatin" sid="645807559522094">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967129232818552" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\BoardGame2.png">
+                            <collision-poly>
+                                <point x="0.335731" y="0" />
+                                <point x="0.47" y="0" />
+                                <point x="0.534269" y="0.0888012" />
+                                <point x="1" y="0.0852452" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.01" y="0.0880883" />
+                                <point x="0.276667" y="0.0852452" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BGFinish" sid="764877449728112">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\bgfinish.png" />
+            </object-type>
+            <object-type name="BoardStar" sid="202187910132703">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976175888979194" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\boardFinish.png">
+                            <collision-poly>
+                                <point x="0.36596" y="0.709125" />
+                                <point x="0.5" y="0.00450602" />
+                                <point x="0.63404" y="0.709125" />
+                                <point x="0.861325" y="0.498116" />
+                                <point x="0.925431" y="0.856077" />
+                                <point x="0.5" y="0.761877" />
+                                <point x="0.0745687" y="0.856077" />
+                                <point x="0.138675" y="0.498116" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="YellowStar" sid="156878423236171">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="897379496310921">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265886402226835" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\1star.png">
+                            <collision-poly>
+                                <point x="0.146305" y="0.346429" />
+                                <point x="0.199095" y="0.5" />
+                                <point x="0.0784314" y="0.814286" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\2star.png">
+                            <collision-poly>
+                                <point x="0.146305" y="0.345196" />
+                                <point x="0.499246" y="0.00355872" />
+                                <point x="0.616893" y="0.498221" />
+                                <point x="0.499246" y="0.708185" />
+                                <point x="0.0784314" y="0.814947" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\3star.png">
+                            <collision-poly>
+                                <point x="0.147147" y="0.347518" />
+                                <point x="0.5" y="0.0070922" />
+                                <point x="0.852853" y="0.347518" />
+                                <point x="0.92042" y="0.815603" />
+                                <point x="0.5" y="0.70922" />
+                                <point x="0.0795796" y="0.815603" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BoardName" sid="798049786963166">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491028449667101" speed="5">
+                        <frame duration="1" hotspotX="0.501832" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\boardName.png">
+                            <collision-poly>
+                                <point x="0.0879121" y="0.20339" />
+                                <point x="0.498168" y="0.00847458" />
+                                <point x="0.992674" y="0.0169492" />
+                                <point x="0.912088" y="0.79661" />
+                                <point x="0.498168" y="1" />
+                                <point x="0.003663" y="0.991525" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Next" sid="300675370440386">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141254971917210" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\IconNext.png">
+                            <collision-poly>
+                                <point x="0.0668422" y="0.0621841" />
+                                <point x="0.498092" y="0.13009" />
+                                <point x="0.727074" y="0.25518" />
+                                <point x="0.986587" y="0.498213" />
+                                <point x="0.727074" y="0.744819" />
+                                <point x="0.498092" y="0.86991" />
+                                <point x="0.0668422" y="0.937816" />
+                                <point x="0.00959671" y="0.498213" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Prev" sid="218354378293536">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668544676278152" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.494118" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\IconNext.png">
+                            <collision-poly>
+                                <point x="0.933158" y="0.937816" />
+                                <point x="0.501908" y="0.86991" />
+                                <point x="0.272926" y="0.74482" />
+                                <point x="0.013413" y="0.501787" />
+                                <point x="0.272926" y="0.255181" />
+                                <point x="0.501908" y="0.13009" />
+                                <point x="0.933158" y="0.062184" />
+                                <point x="0.990403" y="0.501787" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Loading" sid="715244076646008">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="723091973043777" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.00588235" y="0.0441176" />
+                                <point x="0.5" y="0.308824" />
+                                <point x="0.915686" y="0.632353" />
+                                <point x="0.582353" y="0.5" />
+                                <point x="0.5" y="0.764706" />
+                                <point x="0.0313726" y="0.764706" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.00588235" y="0.0441176" />
+                                <point x="0.5" y="0.308824" />
+                                <point x="0.915686" y="0.632353" />
+                                <point x="0.582353" y="0.5" />
+                                <point x="0.5" y="0.764706" />
+                                <point x="0.0313726" y="0.764706" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.00588235" y="0.0441176" />
+                                <point x="0.5" y="0.308824" />
+                                <point x="0.915686" y="0.632353" />
+                                <point x="0.582353" y="0.5" />
+                                <point x="0.5" y="0.764706" />
+                                <point x="0.0313726" y="0.764706" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.00588235" y="0.0441176" />
+                                <point x="0.5" y="0.308824" />
+                                <point x="0.915686" y="0.632353" />
+                                <point x="0.582353" y="0.5" />
+                                <point x="0.5" y="0.764706" />
+                                <point x="0.0313726" y="0.764706" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\load1.png">
+                            <collision-poly>
+                                <point x="0.00588235" y="0.0441176" />
+                                <point x="0.5" y="0.308824" />
+                                <point x="0.915686" y="0.632353" />
+                                <point x="0.582353" y="0.5" />
+                                <point x="0.5" y="0.764706" />
+                                <point x="0.0313726" y="0.764706" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Drop" sid="593520142508060">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="correct" sid="668367334632421" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905012935823078" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Drop.png">
+                            <collision-poly>
+                                <point x="0.020996" y="0.0532881" />
+                                <point x="0.5" y="0.0335075" />
+                                <point x="0.977753" y="0.0565849" />
+                                <point x="0.977753" y="0.943415" />
+                                <point x="0.5" y="0.963196" />
+                                <point x="0.0222466" y="0.943415" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="garis" sid="513928264276413">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204053233004317" speed="5">
+                        <frame duration="1" hotspotX="0.500226" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\line.png">
+                            <collision-poly>
+                                <point x="0.00135563" y="0.214286" />
+                                <point x="0.499774" y="0.0714286" />
+                                <point x="0.999096" y="0.142857" />
+                                <point x="0.999096" y="0.857143" />
+                                <point x="0.499774" y="0.928571" />
+                                <point x="0.00135563" y="0.785714" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Kalimat" sid="649062007528915">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="correct" sid="211341379978679" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="875169729814698">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="82" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="147491868369520" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kal2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kal3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kal4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kal5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal6.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal7.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal8.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal9.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal10.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal11.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal12.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal13.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal14.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal20.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal21.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal22.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal23.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal15.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal16.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal17.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal18.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal19.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal24.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal25.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal26.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal27.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal28.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal29.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal30.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal31.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal32.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal33.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal34.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal35.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal36.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal37.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal38.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal39.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal40.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal41.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal42.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal43.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal44.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal45.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal46.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal47.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal48.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal49.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal50.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal51.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal52.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal53.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\57.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\57.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal54.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal55.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal56.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal59.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal60.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal61.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal62.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal63.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal64.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal65.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal66.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal67.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal68.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal69.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal70.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal71.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal72.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal73.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal74.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal75.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal76.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal77.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal78.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal79.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal80.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal81.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\kata\kal82.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Nyawa" sid="300370546429854">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ke" sid="285296213372355" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350029414148109" speed="8">
+                        <frame duration="1" hotspotX="0.513514" hotspotY="0.514286" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\nyawa.png">
+                            <collision-poly>
+                                <point x="0.127105" y="0.079497" />
+                                <point x="0.5" y="0.201833" />
+                                <point x="0.872895" y="0.079497" />
+                                <point x="0.896201" y="0.485294" />
+                                <point x="0.715237" y="0.719523" />
+                                <point x="0.5" y="0.934356" />
+                                <point x="0.284763" y="0.719523" />
+                                <point x="0.103799" y="0.485294" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511628" hotspotY="0.514286" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\nyawa2.png">
+                            <collision-poly>
+                                <point x="0.0601685" y="0.0877193" />
+                                <point x="0.499398" y="0.663158" />
+                                <point x="0.939832" y="0.0877193" />
+                                <point x="0.941035" y="0.5" />
+                                <point x="0.799037" y="0.707018" />
+                                <point x="0.499398" y="0.998246" />
+                                <point x="0.199759" y="0.708772" />
+                                <point x="0.0577617" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511628" hotspotY="0.514286" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\nyawa3.png">
+                            <collision-poly>
+                                <point x="0.168085" y="0.228986" />
+                                <point x="0.5" y="0.753623" />
+                                <point x="0.874468" y="0.171014" />
+                                <point x="0.897872" y="0.5" />
+                                <point x="0.769149" y="0.685507" />
+                                <point x="0.5" y="0.931884" />
+                                <point x="0.17766" y="0.757971" />
+                                <point x="0.0702128" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511628" hotspotY="0.514286" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\nyawa4.png">
+                            <collision-poly>
+                                <point x="0.168085" y="0.228986" />
+                                <point x="0.5" y="0.753623" />
+                                <point x="0.874468" y="0.171014" />
+                                <point x="0.897872" y="0.5" />
+                                <point x="0.769149" y="0.685507" />
+                                <point x="0.5" y="0.931884" />
+                                <point x="0.17766" y="0.757971" />
+                                <point x="0.0702128" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511628" hotspotY="0.514286" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TempatNyawa" sid="504735908904613">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596647413774054" speed="5">
+                        <frame duration="1" hotspotX="0.500221" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\tempatNyawa.png">
+                            <collision-poly>
+                                <point x="0.0229378" y="0.0780781" />
+                                <point x="0.499779" y="0.13964" />
+                                <point x="0.977062" y="0.0780781" />
+                                <point x="0.975739" y="0.5" />
+                                <point x="0.921041" y="0.731231" />
+                                <point x="0.499779" y="0.989489" />
+                                <point x="0.078959" y="0.731231" />
+                                <point x="0.0242611" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Check" sid="938084884416924">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="875260124594158">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714622824252163" speed="0">
+                        <frame duration="1" hotspotX="0.505155" hotspotY="0.505155" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\check.png">
+                            <collision-poly>
+                                <point x="0.0423497" y="0.0492063" />
+                                <point x="0.5" y="0.0015873" />
+                                <point x="0.959016" y="0.047619" />
+                                <point x="1" y="0.5" />
+                                <point x="0.959016" y="0.952381" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0409836" y="0.952381" />
+                                <point x="0.00136612" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.505155" hotspotY="0.505155" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\check2.png">
+                            <collision-poly>
+                                <point x="0.0409836" y="0.047619" />
+                                <point x="0.5" y="0" />
+                                <point x="0.959016" y="0.047619" />
+                                <point x="1" y="0.5" />
+                                <point x="0.959016" y="0.952381" />
+                                <point x="0.5" y="0.998413" />
+                                <point x="0.0409836" y="0.952381" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ok" sid="301120155964433">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986560120453050" speed="5">
+                        <frame duration="1" hotspotX="0.50303" hotspotY="0.508475" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\ok.png">
+                            <collision-poly>
+                                <point x="0.0120643" y="0.0337079" />
+                                <point x="0.5" y="0.00374532" />
+                                <point x="0.987936" y="0.0337079" />
+                                <point x="0.987936" y="0.966292" />
+                                <point x="0.5" y="0.992509" />
+                                <point x="0.0120643" y="0.966292" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ExtraKalimat" sid="176153966474294">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="32" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="213612256324653" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\1.png">
+                            <collision-poly>
+                                <point x="0.52809" y="0.606452" />
+                                <point x="0.5" y="0.219355" />
+                                <point x="0.792135" y="0.23871" />
+                                <point x="0.966292" y="0.496774" />
+                                <point x="0.752809" y="0.716129" />
+                                <point x="0.5" y="0.716129" />
+                                <point x="0.106742" y="0.877419" />
+                                <point x="0.269663" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\2.png">
+                            <collision-poly>
+                                <point x="0.168224" y="0.232258" />
+                                <point x="0.5" y="0.083871" />
+                                <point x="0.67757" y="0.445161" />
+                                <point x="0.96729" y="0.496774" />
+                                <point x="0.873832" y="0.825806" />
+                                <point x="0.5" y="0.664516" />
+                                <point x="0.0934579" y="0.870968" />
+                                <point x="0.0420561" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\3.png">
+                            <collision-poly>
+                                <point x="0.193277" y="0.149351" />
+                                <point x="0.495798" y="0.435065" />
+                                <point x="0.092437" y="0.701299" />
+                                <point x="0.966387" y="0.5" />
+                                <point x="0.806723" y="0.850649" />
+                                <point x="0.495798" y="0.785714" />
+                                <point x="0.201681" y="0.844156" />
+                                <point x="0.10084" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\5.png">
+                            <collision-poly>
+                                <point x="0.107042" y="0.245161" />
+                                <point x="0.498592" y="0.477419" />
+                                <point x="0.822535" y="0.406452" />
+                                <point x="0.994366" y="0.496774" />
+                                <point x="0.926761" y="0.832258" />
+                                <point x="0.498592" y="0.870968" />
+                                <point x="0.132394" y="0.696774" />
+                                <point x="0.0394366" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\4.png">
+                            <collision-poly>
+                                <point x="0.386667" y="0.564935" />
+                                <point x="0.497778" y="0.194805" />
+                                <point x="0.648889" y="0.512987" />
+                                <point x="0.995556" y="0.5" />
+                                <point x="0.897778" y="0.850649" />
+                                <point x="0.497778" y="0.668831" />
+                                <point x="0.0533333" y="0.922078" />
+                                <point x="0.4" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\6.png">
+                            <collision-poly>
+                                <point x="0.164835" y="0.290323" />
+                                <point x="0.498168" y="0.593548" />
+                                <point x="0.857143" y="0.251613" />
+                                <point x="0.981685" y="0.496774" />
+                                <point x="0.923077" y="0.864516" />
+                                <point x="0.498168" y="0.941935" />
+                                <point x="0.0842491" y="0.851613" />
+                                <point x="0.0842491" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\7.png">
+                            <collision-poly>
+                                <point x="0.310811" y="0.593548" />
+                                <point x="0.5" y="0.529032" />
+                                <point x="0.807432" y="0.367742" />
+                                <point x="0.97973" y="0.496774" />
+                                <point x="0.817568" y="0.651613" />
+                                <point x="0.5" y="0.832258" />
+                                <point x="0.0608108" y="0.883871" />
+                                <point x="0.324324" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\8.png">
+                            <collision-poly>
+                                <point x="0.275449" y="0.298701" />
+                                <point x="0.497006" y="0.188312" />
+                                <point x="0.616766" y="0.415584" />
+                                <point x="0.964072" y="0.5" />
+                                <point x="0.868263" y="0.857143" />
+                                <point x="0.497006" y="0.876623" />
+                                <point x="0.275449" y="0.701299" />
+                                <point x="0.0598802" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\9.png">
+                            <collision-poly>
+                                <point x="0.295181" y="0.318182" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.873494" y="0.136364" />
+                                <point x="0.963855" y="0.5" />
+                                <point x="0.861446" y="0.850649" />
+                                <point x="0.5" y="0.688312" />
+                                <point x="0.295181" y="0.681818" />
+                                <point x="0.0722892" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\10.png">
+                            <collision-poly>
+                                <point x="0.218997" y="0.535484" />
+                                <point x="0.498681" y="0.2" />
+                                <point x="0.83905" y="0.393548" />
+                                <point x="0.992084" y="0.496774" />
+                                <point x="0.926121" y="0.819355" />
+                                <point x="0.498681" y="0.896774" />
+                                <point x="0.0659631" y="0.83871" />
+                                <point x="0.266491" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\11.png">
+                            <collision-poly>
+                                <point x="0.496183" y="0.329032" />
+                                <point x="0.221374" y="0.658065" />
+                                <point x="0.832061" y="0.496774" />
+                                <point x="0.725191" y="0.767742" />
+                                <point x="0.496183" y="0.748387" />
+                                <point x="0.274809" y="0.767742" />
+                                <point x="0.0610687" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\12.png">
+                            <collision-poly>
+                                <point x="0.251908" y="0.212903" />
+                                <point x="0.496183" y="0.509677" />
+                                <point x="0.656489" y="0.290323" />
+                                <point x="0.778626" y="0.496774" />
+                                <point x="0.78626" y="0.819355" />
+                                <point x="0.496183" y="0.825806" />
+                                <point x="0.267176" y="0.774194" />
+                                <point x="0.0763359" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\13.png">
+                            <collision-poly>
+                                <point x="0.114958" y="0.535484" />
+                                <point x="0.5" y="0.503226" />
+                                <point x="0.912742" y="0.406452" />
+                                <point x="0.99169" y="0.496774" />
+                                <point x="0.961219" y="0.819355" />
+                                <point x="0.5" y="0.645161" />
+                                <point x="0.0221607" y="0.896774" />
+                                <point x="0.137119" y="0.496774" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\13.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\14.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\15.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\16.png">
+                            <collision-poly>
+                                <point x="0.0466786" y="0.168831" />
+                                <point x="0.499102" y="0.155844" />
+                                <point x="0.991023" y="0.5" />
+                                <point x="0.953321" y="0.831169" />
+                                <point x="0.499102" y="0.662338" />
+                                <point x="0.0933573" y="0.662338" />
+                                <point x="0.010772" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\17.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\18.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\19.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\20.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\21.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\22.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\23.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\24.png">
+                            <collision-poly>
+                                <point x="0.0377113" y="0.188312" />
+                                <point x="0.49935" y="0.422078" />
+                                <point x="0.911573" y="0.441558" />
+                                <point x="0.990897" y="0.5" />
+                                <point x="0.968791" y="0.844156" />
+                                <point x="0.49935" y="0.844156" />
+                                <point x="0.0624187" y="0.688312" />
+                                <point x="0.00910273" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\25.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\26.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\27.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\28.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\29.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\30.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\extrakata\31.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BGUtama" sid="689878114630070">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="820241342905737">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729221370825193" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500747" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\BGUTAMA.png">
+                            <collision-poly>
+                                <point x="0.00084317" y="0.00149477" />
+                                <point x="0.999157" y="0.00149477" />
+                                <point x="0.999157" y="0.998505" />
+                                <point x="0.00084317" y="0.998505" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Logo" sid="256832312813365">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="804341763198305">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="624587620750244">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733425889257325" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Logo.png">
+                            <collision-poly>
+                                <point x="0.160584" y="0.161765" />
+                                <point x="0.5" y="0.00367647" />
+                                <point x="0.956204" y="0.0441176" />
+                                <point x="0.886861" y="0.5" />
+                                <point x="0.79562" y="0.794118" />
+                                <point x="0.5" y="0.816176" />
+                                <point x="0.0583942" y="0.941176" />
+                                <point x="0.0547445" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LogoTulisan" sid="495049986995823">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="971073758493117">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="548989742917867" speed="5">
+                        <frame duration="1" hotspotX="0.500736" hotspotY="0.502222" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Logo Tulisan.png">
+                            <collision-poly>
+                                <point x="0.0294551" y="0.0888889" />
+                                <point x="0.499264" y="0.0666667" />
+                                <point x="0.917526" y="0.248889" />
+                                <point x="0.0706922" y="0.497778" />
+                                <point x="0.989691" y="0.968889" />
+                                <point x="0.499264" y="0.728889" />
+                                <point x="0.184094" y="0.444444" />
+                                <point x="0.0427099" y="0.497778" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StarEffect" sid="916236603497894">
+                <plugin id="Particles" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="201348259017358">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\starEffect.png" />
+            </object-type>
+            <object-type name="anyclick" sid="326631479861671">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\starEffect.png" />
+            </object-type>
+            <object-type name="SoundTombol" sid="740171283105245">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="773228035640761" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\sound.png">
+                            <collision-poly>
+                                <point x="0.0247678" y="0.0247678" />
+                                <point x="0.498452" y="0" />
+                                <point x="0.975232" y="0.0247678" />
+                                <point x="1" y="0.498452" />
+                                <point x="0.975232" y="0.975232" />
+                                <point x="0.498452" y="0.996904" />
+                                <point x="0.0278638" y="0.972136" />
+                                <point x="0.00309598" y="0.498452" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\sound 2.png">
+                            <collision-poly>
+                                <point x="0.0247678" y="0.0247678" />
+                                <point x="0.498452" y="0" />
+                                <point x="0.975232" y="0.0247678" />
+                                <point x="1" y="0.498452" />
+                                <point x="0.975232" y="0.975232" />
+                                <point x="0.498452" y="0.996904" />
+                                <point x="0.0247678" y="0.975232" />
+                                <point x="0.00309598" y="0.498452" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StarYellowEffect" sid="620688815341207">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\StarBoard.png" />
+            </object-type>
+            <object-type name="Karakter" sid="188476325966720">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="456950946206325" speed="0">
+                        <frame duration="1" hotspotX="0.50079" hotspotY="0.498952" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Char.png">
+                            <collision-poly>
+                                <point x="0.00324675" y="0.0638014" />
+                                <point x="0.00324675" y="0.680049" />
+                                <point x="1" y="0.0252081" />
+                                <point x="1" y="0.494137" />
+                                <point x="1" y="0.746446" />
+                                <point x="0.00324675" y="0.929868" />
+                                <point x="0.00324675" y="0.965557" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.49921" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\char1.png">
+                            <collision-poly>
+                                <point x="0" y="0.0647538" />
+                                <point x="0" y="0.679656" />
+                                <point x="0.996865" y="0.0262448" />
+                                <point x="0.996865" y="0.49415" />
+                                <point x="0.996865" y="0.745908" />
+                                <point x="0" y="0.92893" />
+                                <point x="0" y="0.96454" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="KarakterPlayer" sid="347157572490085">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="916640334022316" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.0598439" />
+                                <point x="0" y="0.680137" />
+                                <point x="1" y="0.0209972" />
+                                <point x="1" y="0.493004" />
+                                <point x="1" y="0.74697" />
+                                <point x="0" y="0.931596" />
+                                <point x="0" y="0.967519" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498442" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.0669993" />
+                                <point x="0" y="0.68257" />
+                                <point x="1" y="0.0284485" />
+                                <point x="1" y="0.496862" />
+                                <point x="1" y="0.748894" />
+                                <point x="0" y="0.932115" />
+                                <point x="0" y="0.967764" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498688" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.0579266" />
+                                <point x="0" y="0.680928" />
+                                <point x="1" y="0.0189103" />
+                                <point x="1" y="0.492979" />
+                                <point x="1" y="0.748053" />
+                                <point x="0" y="0.933486" />
+                                <point x="0" y="0.969565" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.0652271" />
+                                <point x="0" y="0.684838" />
+                                <point x="1" y="0.0264232" />
+                                <point x="1" y="0.497912" />
+                                <point x="1" y="0.751598" />
+                                <point x="0" y="0.936022" />
+                                <point x="0" y="0.971904" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.49945" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0.492074" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.676869" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.498599" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="1" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498382" hotspotY="0.499455" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0.00323625" y="0" />
+                                <point x="0.00323625" y="0.998909" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.998909" />
+                                <point x="1" y="0.998909" />
+                                <point x="0.00323625" y="0.998909" />
+                                <point x="0.00323625" y="0.998909" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498498" hotspotY="0.498915" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.0021692" />
+                                <point x="0" y="1" />
+                                <point x="1" y="0.0021692" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498638" hotspotY="0.499452" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0.998905" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.998905" />
+                                <point x="1" y="0.998905" />
+                                <point x="0" y="0.998905" />
+                                <point x="0" y="0.998905" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498638" hotspotY="0.499457" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="1" />
+                                <point x="0.997275" y="0" />
+                                <point x="0.997275" y="1" />
+                                <point x="0.997275" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498233" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498305" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LatarBelakang" sid="805620754571442">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="393880565453087" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="0.999097" y="0.998645" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang2.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang3.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang4.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang5.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500451" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang6.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang7.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang8.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang9.png">
+                            <collision-poly>
+                                <point x="0.000901713" y="0.00135501" />
+                                <point x="0.999098" y="0.00135501" />
+                                <point x="0.999098" y="0.998645" />
+                                <point x="0.000901713" y="0.998645" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang10.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang11.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang12.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang13.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500451" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang14.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500677" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\LatarBelakang15.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999097" y="0.00135501" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LogoKepala" sid="939791251165474">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="290172593569155" speed="0">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0.998031" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.62309" />
+                                <point x="0" y="0.998031" />
+                                <point x="0" y="0.998031" />
+                                <point x="0" y="0.998031" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.498339" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\charkumpul.png">
+                            <collision-poly>
+                                <point x="0" y="0.568917" />
+                                <point x="0" y="0.998084" />
+                                <point x="0.68465" y="0.143666" />
+                                <point x="0" y="0.998084" />
+                                <point x="0" y="0.998084" />
+                                <point x="0" y="0.998084" />
+                                <point x="0" y="0.998084" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AssetRoom" sid="299625043041415">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="777571322562284" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\AssetRoom1.png">
+                            <collision-poly>
+                                <point x="0.0806045" y="0.202532" />
+                                <point x="0.5" y="0" />
+                                <point x="0.919395" y="0.202532" />
+                                <point x="0.998741" y="0.5" />
+                                <point x="0.933249" y="0.832278" />
+                                <point x="0.5" y="0.996835" />
+                                <point x="0.0642317" y="0.838608" />
+                                <point x="0.00125945" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500629" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\AssetRoom2.png">
+                            <collision-poly>
+                                <point x="0.0806045" y="0.202532" />
+                                <point x="0.5" y="0" />
+                                <point x="0.919395" y="0.202532" />
+                                <point x="0.998741" y="0.5" />
+                                <point x="0.933249" y="0.832278" />
+                                <point x="0.5" y="0.996835" />
+                                <point x="0.0642317" y="0.838608" />
+                                <point x="0.00125945" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500624" hotspotY="0.501845" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\AssetRoom3.png">
+                            <collision-poly>
+                                <point x="0.0806045" y="0.202532" />
+                                <point x="0.5" y="0" />
+                                <point x="0.919395" y="0.202532" />
+                                <point x="0.998741" y="0.5" />
+                                <point x="0.933249" y="0.832278" />
+                                <point x="0.5" y="0.996835" />
+                                <point x="0.0642317" y="0.838608" />
+                                <point x="0.00125945" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500624" hotspotY="0.501845" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\AssetRoom4.png">
+                            <collision-poly>
+                                <point x="0.0806045" y="0.202532" />
+                                <point x="0.5" y="0" />
+                                <point x="0.919395" y="0.202532" />
+                                <point x="0.998741" y="0.5" />
+                                <point x="0.933249" y="0.832278" />
+                                <point x="0.5" y="0.996835" />
+                                <point x="0.0642317" y="0.838608" />
+                                <point x="0.00125945" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PetunjukTombol" sid="988039718347199">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860573745594328" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\TombolPetunjuk.png">
+                            <collision-poly>
+                                <point x="0.1824" y="0.159664" />
+                                <point x="0.4992" y="0.00280112" />
+                                <point x="0.816" y="0.161064" />
+                                <point x="0.992" y="0.5" />
+                                <point x="0.816" y="0.838936" />
+                                <point x="0.4992" y="0.998599" />
+                                <point x="0.1824" y="0.840336" />
+                                <point x="0.0048" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Petunjuk" sid="991158775541098">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="409419899852229" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Petunjuk\1.png">
+                            <collision-poly>
+                                <point x="0.000414422" y="0.000733138" />
+                                <point x="0.999586" y="0.000733138" />
+                                <point x="0.999586" y="0.999267" />
+                                <point x="0.000414422" y="0.999267" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500207" hotspotY="0.500364" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Petunjuk\2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Petunjuk\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\N_______\OneDrive\Gambar\bahan skripsi\Petunjuk\4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objects">
+            <object-type name="Browser" sid="817231380114412">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Touch" sid="288891455328264">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="InputNama" sid="293122413626088">
+                <plugin id="TextBox" />
+                <instance-variables>
+                    <instance-variable name="nama" sid="627039915201473" type="string" />
+                </instance-variables>
+            </object-type>
+            <object-type name="LocalStorage" sid="294140837469750">
+                <plugin id="LocalStorage" />
+            </object-type>
+            <object-type name="Audio" sid="233189187854808">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Texts">
+            <object-type name="ExpPoin" sid="482392339186672">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TxtKoin" sid="454172865704407">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="user" sid="508738779591984">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelLayout" sid="186282862616677">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Notif1" sid="772510338821214">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelBoard" sid="580877615327934">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Notif2" sid="426398482669210">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelLayout2" sid="139888681892278">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelLayout3" sid="239554765331566">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TempStar" sid="376575398286749">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TempKoin" sid="653562736245353">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="PopUpText" sid="972875746833641">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa11" sid="292314090192643">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa12" sid="949788744419131">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa13" sid="880482481264262">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa21" sid="901374300095280">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa22" sid="611428346500584">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa23" sid="654619667705663">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa31" sid="962447817887919">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa32" sid="515689070529143">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LabelDoa33" sid="442366822404053">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Petik" sid="847453957556623">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="textDoa" sid="425276631983405">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Cerita" sid="299666360887936">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Judul" sid="207864876569732">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sentuh" sid="796338357052851">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="546104835301478">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="LabelBoardSkor" sid="303938607416912">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LevelDicapai" sid="329820457848914">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout Mulai.xml</layout>
+        <layout>Layout Menu.xml</layout>
+        <layout>Layout Karakter.xml</layout>
+        <layout>Layout Game.xml</layout>
+        <layout>Layout Game 2.xml</layout>
+        <layout>Layout Game 3.xml</layout>
+        <layout>Layout Game 4.xml</layout>
+        <layout>Layout Game 5.xml</layout>
+        <layout>Layout Game 6.xml</layout>
+        <layout>Layout Game 7.xml</layout>
+        <layout>Layout Game 8.xml</layout>
+        <layout>Layout Game 9.xml</layout>
+        <layout>Layout Game 10.xml</layout>
+        <layout>Layout Game 11.xml</layout>
+        <layout>Layout Game 12.xml</layout>
+        <layout>Layout Game 13.xml</layout>
+        <layout>Layout Game 14.xml</layout>
+        <layout>Layout Game 15.xml</layout>
+        <layout>Layout Game 16.xml</layout>
+        <layout>Layout Game 17.xml</layout>
+        <layout>Layout Game 18.xml</layout>
+        <layout>Layout Game 19.xml</layout>
+        <layout>Layout Game 20.xml</layout>
+        <layout>Layout Finish.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet Menu.xml</event-sheet>
+        <event-sheet>Event sheet Karakter.xml</event-sheet>
+        <event-sheet>Event sheet Game.xml</event-sheet>
+        <event-sheet>Event sheet Finish.xml</event-sheet>
+        <event-sheet>Event sheet Mulai.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="15">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="17" />
+        <global-instance type="LocalStorage" uid="100" />
+        <global-instance type="Audio" uid="901">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Splatez click.m4a" />
+        <file name="correct.m4a" />
+        <file name="correct.ogg" />
+        <file name="incorrect.m4a" />
+        <file name="incorrect.ogg" />
+        <file name="click.m4a" />
+        <file name="click.ogg" />
+        <file name="nilai.m4a" />
+        <file name="nilai.ogg" />
+        <file name="soundtrack.m4a" />
+        <file name="soundtrack.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="fonts">
+            <file name="coopbl-webfont.ttf" />
+            <file name="coopbl-webfont.woff" />
+            <file name="coopbl-webfont.woff2" />
+            <file name="generator_config.txt" />
+            <file name="stylesheet.css" />
+        </file-folder>
+    </files-folder>
+</c2project>

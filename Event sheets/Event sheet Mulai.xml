@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Mulai</name>
+    <events>
+        <event-block sid="460206717905470">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="770607404052352" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="329646764635275" type="Sentuh">
+                    <param id="0" name="Family name">&quot;cooper_blackregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="0" name="Set spraying" sid="834857083002907" type="anyclick">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Play" sid="510046636131799" type="Audio">
+                    <param id="0" name="Audio file">soundtrack</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;gameplay&quot;</param>
+                </action>
+                <action id="3" name="Set volume" sid="559280276534801" type="Audio">
+                    <param id="0" name="Tag">&quot;gameplay&quot;</param>
+                    <param id="1" name="dB">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="312800388755657">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="916876951199900" type="Sentuh" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="167671005315228" type="Sentuh" />
+            </actions>
+        </event-block>
+        <event-block sid="592401557244737">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="997932190030480" type="BGUtama" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="216114203526424" type="System">
+                    <param id="0" name="Layout">Layout Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907145600418171">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="412224123324027" type="Touch">
+                    <param id="0" name="Object">Sentuh</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="364871789543093" type="Sentuh">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="862648887080664" type="BGUtama" />
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="312347567033608" type="LogoTulisan">
+                    <param id="0" name="Fade-out time">2</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="532554564215994" type="Logo">
+                    <param id="0" name="Fade-out time">2</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="196939568622297" type="StarEffect">
+                    <param id="0" name="Fade-out time">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729623896344490">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="393936709950412" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="807562974608570" type="anyclick" />
+                <action id="-3" name="Set position" sid="893597361315793" type="anyclick">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="0" name="Set spraying" sid="303667840767145" type="anyclick">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="267995068704893">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="459915338817078" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set spraying" sid="807848018939549" type="anyclick">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="216505485299484" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
